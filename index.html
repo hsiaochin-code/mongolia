@@ -24,51 +24,18 @@
     --sand:#8F7A3E; --sand2:#6E5D2E; --stone:#4C5B6A; --white-ger:#D9D7CC;
   }
 }
-:root[data-theme="dark"]{
-  --bg:#0E1622; --ink:#E9EEF4; --muted:#93A3B5; --line:#243447;
-  --sky:#6FB1F2; --sky-deep:#A8CFF5; --sky-soft:#16283C;
-  --grass:#5FBF7E; --grass-soft:#15291D;
-  --sun:#F5BE4F; --sun-soft:#2E2512;
-  --alert:#F08A6C; --alert-soft:#361D15;
-  --card:#182335; --hero1:#0D2242; --hero2:#1A3A63; --hill:#1E4A33; --hill2:#173B28;
-  --sand:#8F7A3E; --sand2:#6E5D2E; --stone:#4C5B6A; --white-ger:#D9D7CC;
-}
-:root[data-theme="light"]{
-  --bg:#F3F8FC; --ink:#23303C; --muted:#5F7285; --line:#D8E4EE;
-  --sky:#1E6FC8; --sky-deep:#134E92; --sky-soft:#E1EEFB;
-  --grass:#3E9A5C; --grass-soft:#E3F3E7;
-  --sun:#F2A81D; --sun-soft:#FDF1D7;
-  --alert:#E05A3A; --alert-soft:#FDEAE3;
-  --card:#FFFFFF; --hero1:#8EC9F5; --hero2:#C8E7FB; --hill:#7CC08F; --hill2:#5AAE74;
-  --sand:#E8C97F; --sand2:#D9B25F; --stone:#B9C4CE; --white-ger:#FDFDFB;
-}
 *{box-sizing:border-box}
 body{margin:0; background:var(--bg); color:var(--ink);
   font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
   line-height:1.8; font-size:16px}
-
-/* ---- hero ---- */
-.hero{position:relative; overflow:hidden; border-radius:0 0 26px 26px;
-  background:linear-gradient(180deg,var(--hero1),var(--hero2));
-  padding:46px 26px 0; text-align:center; color:var(--ink)}
-.hero .sky-art{display:block; width:100%; max-width:640px; margin:18px auto -6px}
-.hero h1{font-size:clamp(30px,7vw,44px); margin:.2em 0 0; font-weight:900; letter-spacing:.04em;
-  color:var(--sky-deep); text-wrap:balance}
-.hero .banner{display:inline-block; background:var(--card); border-radius:999px; padding:6px 18px;
-  font-weight:800; color:var(--sky); font-size:15px; box-shadow:0 3px 10px rgba(20,60,110,.12)}
-.hero .dates{font-size:19px; font-weight:800; margin-top:10px; font-variant-numeric:tabular-nums}
-.hero .sub{color:var(--muted); font-size:14px; margin-top:4px; padding-bottom:6px}
-
 nav.toc{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; padding:14px 0 8px;
   position:sticky; top:0; background:var(--bg); z-index:5; border-bottom:2px dashed var(--line)}
 nav.toc a{font-size:13.5px; text-decoration:none; color:var(--sky); font-weight:700;
   border:1.5px solid var(--line); border-radius:999px; padding:4px 13px; background:var(--card)}
-nav.toc a:hover{border-color:var(--sky)}
 nav.daynav{display:flex; flex-wrap:wrap; gap:6px; justify-content:center; padding:8px 0 12px; border-bottom:2px dashed var(--line)}
 nav.daynav a{font-size:12.5px; text-decoration:none; font-weight:800; color:#fff; background:var(--grass);
   border-radius:8px; padding:2px 10px; font-variant-numeric:tabular-nums}
 nav.daynav a.city{background:var(--sky)} nav.daynav a.fly{background:var(--sun)}
-
 section{margin-top:52px}
 h2{font-size:24px; margin:0 0 6px; font-weight:900}
 h2 .emo{margin-right:.35em}
@@ -101,8 +68,6 @@ label.ck.done{color:var(--muted); text-decoration:line-through}
 .tag{display:inline-block; font-size:11.5px; font-weight:800; border-radius:999px; padding:1px 9px; margin-right:6px}
 .tag.must{background:var(--alert); color:#fff}
 .tag.rec{background:var(--sun); color:#fff}
-
-/* ---- full day sections ---- */
 .dayfull{background:var(--card); border:1.5px solid var(--line); border-radius:20px; overflow:hidden; margin-top:34px}
 .dayfull .scene{display:block; width:100%; height:auto; background:linear-gradient(180deg,var(--hero1),var(--hero2))}
 .dayfull .inner{padding:18px 22px 22px}
@@ -125,80 +90,53 @@ label.ck.done{color:var(--muted); text-decoration:line-through}
 .stayline::before{content:"🛏 "}
 footer{margin-top:60px; padding-top:18px; border-top:2px dashed var(--line); color:var(--muted); font-size:12.5px; text-align:center}
 a{color:var(--sky)}
-@media print{ nav.toc,nav.daynav{display:none} body{font-size:12px} .hero{border-radius:0}
-  .reveal{opacity:1 !important; transform:none !important}
-  .dayfull,figure.photo,.urgent,.emg,.tablewrap{break-inside:avoid}
-}
-
-/* ---- photos ---- */
 figure.photo{margin:14px 0; border-radius:14px; overflow:hidden; border:1.5px solid var(--line); background:var(--card)}
 figure.photo img{display:block; width:100%; height:auto}
 figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; line-height:1.5}
-
-/* ---- motion ---- */
 .reveal{opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease}
 .reveal.in{opacity:1; transform:none}
-.hero .cloud{animation:floatx 14s ease-in-out infinite}
-.hero .cloud.c2{animation-duration:19s; animation-delay:-6s}
-.hero .cloud.c3{animation-duration:24s; animation-delay:-13s}
-@keyframes floatx{0%,100%{transform:translateX(0)}50%{transform:translateX(30px)}}
-.hero .sun-main{animation:sunpulse 5s ease-in-out infinite}
-@keyframes sunpulse{0%,100%{opacity:.9}50%{opacity:.6}}
-.hero .horse{animation:gallop 1.5s ease-in-out infinite}
-@keyframes gallop{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 .tw{animation:twinkle 2.6s ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:.15}50%{opacity:1}}
 .shoot{opacity:0; animation:shoot 7s linear infinite}
 @keyframes shoot{0%,90%{opacity:0; transform:translate(0,0)}91%{opacity:1}100%{opacity:0; transform:translate(-280px,95px)}}
-.hero-stars{display:none}
-@media (prefers-color-scheme: dark){ .hero-stars{display:block} }
-:root[data-theme="dark"] .hero-stars{display:block !important}
-:root[data-theme="light"] .hero-stars{display:none !important}
-@media (prefers-reduced-motion: reduce){
-  *{animation:none !important; transition:none !important}
-  .reveal{opacity:1; transform:none}
+@media print{ nav.toc,nav.daynav{display:none} body{font-size:12px}
+  .reveal{opacity:1 !important; transform:none !important}
+  .dayfull,figure.photo,.urgent,.emg,.tablewrap{break-inside:avoid}
 }
+/* ---- dawn-sky hero ---- */
+.hero-night{background:linear-gradient(180deg,#090E22 0%,#0F1B42 30%,#1A3372 56%,#3F5493 70%,#96733F 84%,#D9A94E 93%,#ECC474 100%);
+  border-radius:0 0 26px 26px; padding:60px 26px 96px; position:relative; overflow:hidden; text-align:left}
+.hero-night .hero-inner{max-width:740px; margin:0 auto; position:relative; z-index:2}
+.eyebrow2{color:#D9B36A; letter-spacing:.42em; font-size:13px; font-weight:700}
+.hero-night h1{color:#FFF; font-family:"Songti TC","Noto Serif TC","PingFang TC",serif;
+  font-weight:900; font-size:clamp(30px,6.5vw,46px); line-height:1.32; margin:.3em 0 .25em; letter-spacing:.06em; text-wrap:balance}
+.dates2{color:#C9D4EA; font-size:15px; font-variant-numeric:tabular-nums; line-height:1.7}
+.cd{display:inline-flex; align-items:baseline; gap:5px; background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:12px 18px; margin-top:20px;
+  color:#E8EEF9; backdrop-filter:blur(4px); font-size:15px}
+.cd .n{font-size:30px; font-weight:900; font-variant-numeric:tabular-nums; color:#FFF}
+.cd-sub{font-size:13px; color:#C9D4EA; margin-left:8px}
+.stars2{position:absolute; left:0; top:0; right:0; bottom:24%; z-index:1; pointer-events:none}
+.stars2 i{position:absolute; background:#FFF; border-radius:50%; display:block; animation:twinkle2 3s ease-in-out infinite}
+@keyframes twinkle2{0%,100%{opacity:.2}50%{opacity:1}}
+.ger-sil{position:absolute; right:5%; bottom:-2px; width:clamp(90px,14vw,150px); z-index:1}
+@media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important} .reveal{opacity:1; transform:none} .stars2 i{opacity:.7} }
 </style>
 
-<header class="hero">
-  <span class="banner">🐎 出發去成吉思汗的故鄉！</span>
-  <h1>蒙古國深度8日<br>旅遊手冊</h1>
-  <div class="dates">2026/7/14（二）→ 7/21（二）</div>
-  <div class="sub">誠旺「穿越蒙古國深度8日」・團號 ULN08260714A・行李牌：樂遊趣（藍）</div>
-  <svg class="sky-art" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <g class="hero-stars" id="heroStars"></g>
-    <circle class="sun-main" cx="520" cy="52" r="30" fill="var(--sun)" opacity=".9"/>
-    <circle cx="520" cy="52" r="42" fill="var(--sun)" opacity=".25"/>
-    <ellipse class="cloud c1" cx="130" cy="55" rx="52" ry="14" fill="var(--card)" opacity=".8"/>
-    <ellipse class="cloud c2" cx="175" cy="63" rx="38" ry="11" fill="var(--card)" opacity=".65"/>
-    <ellipse class="cloud c3" cx="330" cy="34" rx="40" ry="10" fill="var(--card)" opacity=".55"/>
-    <path d="M0 150 Q160 92 340 138 T640 128 V200 H0 Z" fill="var(--hill)"/>
-    <path d="M0 172 Q220 128 430 162 T640 158 V200 H0 Z" fill="var(--hill2)"/>
-    <g>
-      <ellipse cx="150" cy="160" rx="34" ry="7" fill="rgba(0,0,0,.12)"/>
-      <path d="M118 158 v-16 q32 -26 64 0 v16 Z" fill="var(--white-ger)" stroke="#C9C4B4" stroke-width="1.5"/>
-      <path d="M118 142 q32 -26 64 0 Z" fill="#EFEBDD" stroke="#C9C4B4" stroke-width="1.5"/>
-      <rect x="143" y="144" width="14" height="14" rx="2" fill="var(--sky-deep)"/>
-      <line x1="150" y1="126" x2="150" y2="116" stroke="#C9C4B4" stroke-width="2"/>
-    </g>
-    <g transform="translate(85,10) scale(.72)">
-      <ellipse cx="150" cy="160" rx="34" ry="7" fill="rgba(0,0,0,.10)"/>
-      <path d="M118 158 v-16 q32 -26 64 0 v16 Z" fill="var(--white-ger)" stroke="#C9C4B4" stroke-width="1.5"/>
-      <path d="M118 142 q32 -26 64 0 Z" fill="#EFEBDD" stroke="#C9C4B4" stroke-width="1.5"/>
-      <rect x="143" y="144" width="14" height="14" rx="2" fill="var(--grass)"/>
-    </g>
-    <g class="horse" fill="var(--ink)" transform="translate(400,128) scale(.9)">
-      <ellipse cx="40" cy="24" rx="26" ry="12"/>
-      <path d="M14 22 q-8 -2 -12 -14 q-2 -7 4 -6 q7 1 10 8 l4 8 Z"/>
-      <path d="M4 2 q6 -4 10 2 l-6 4 Z"/>
-      <rect x="22" y="32" width="5" height="22" rx="2"/>
-      <rect x="34" y="34" width="5" height="20" rx="2"/>
-      <rect x="48" y="34" width="5" height="20" rx="2"/>
-      <rect x="58" y="32" width="5" height="22" rx="2"/>
-      <path d="M64 20 q12 2 14 12 q-8 2 -14 -4 Z"/>
-    </g>
-    <path d="M60 30 q6 -6 12 0 M74 34 q6 -6 12 0" stroke="var(--sky-deep)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<header class="hero hero-night">
+  <div class="stars2" id="dawnStars"></div>
+  <svg class="ger-sil" viewBox="0 0 130 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="62" y="8" width="4" height="6" fill="#F2C14E"/>
+    <rect x="61" y="14" width="6" height="14" fill="#2B2620"/>
+    <path d="M8 82 q0 -38 57 -38 q57 0 57 38 Z" fill="#2B2620"/>
+    <rect x="56" y="60" width="18" height="22" rx="2" fill="#15100C"/>
   </svg>
+  <div class="hero-inner">
+    <div class="eyebrow2">МОНГОЛ УЛС ・ 蒙 古 國</div>
+    <h1>穿越蒙古國<br>深度8日旅遊手冊</h1>
+    <div class="dates2">2026.07.14（二）— 07.21（二）｜台北 ✈ 香港 ✈ 烏蘭巴托<br>誠旺・團號 ULN08260714A・行李牌：樂遊趣（藍）</div>
+    <div class="cd" id="cd"><span class="n" id="cdD">–</span>天 <span class="n" id="cdH">–</span>時 <span class="n" id="cdM">–</span>分 <span class="cd-sub">距離 7/14 凌晨 5:00 集合</span></div>
+  </div>
 </header>
 
 <div style="max-width:780px;margin:0 auto;padding:0 20px 90px">
@@ -349,13 +287,6 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
       <rect x="50" y="34" width="5" height="18" rx="2"/><rect x="60" y="32" width="5" height="20" rx="2"/>
       <path d="M64 20 q12 2 14 12 q-8 2 -14 -4 Z"/>
     </g>
-    <g fill="var(--ink)" transform="translate(545,102) scale(.42)" opacity=".85">
-      <ellipse cx="40" cy="24" rx="26" ry="12"/>
-      <path d="M14 22 q-8 -2 -12 -14 q-2 -7 4 -6 q7 1 10 8 l4 8 Z"/>
-      <rect x="22" y="32" width="5" height="20" rx="2"/><rect x="36" y="34" width="5" height="18" rx="2"/>
-      <rect x="50" y="34" width="5" height="18" rx="2"/><rect x="60" y="32" width="5" height="20" rx="2"/>
-      <path d="M64 20 q12 2 14 12 q-8 2 -14 -4 Z"/>
-    </g>
     <text x="24" y="30" font-size="13" font-weight="800" fill="var(--sky-deep)">巴彥戈壁 → 哈斯台野馬</text>
   </svg>
   <div class="inner">
@@ -363,12 +294,12 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
     <ul class="route">
       <li><b>上午</b> 不定點探訪草原牧民家：道地蒙古小點、馬奶酒（淺嚐即可 🍶）</li>
       <li><b>中午前後</b> 巴彥戈壁——<b>騎雙峰駱駝 30 分鐘</b>（記得：不穿紅色、先抓穩扶手）</li>
-      <li><b>下午</b> 哈斯台國家公園：陳列館聽解說 → 進園區找野生蒙古野馬（不保證看到，但追尋的過程就是野生動物園級體驗）</li>
+      <li><b>下午</b> 哈斯台國家公園：陳列館聽解說 → 進園區找野生蒙古野馬</li>
       <li><b>傍晚</b> 遊牧民族渡假村：看牧民馬上騎技、奶製品、體驗游牧日常</li>
     </ul>
     <figure class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/PrezHorseHustai.jpg/960px-PrezHorseHustai.jpg" alt="普氏野馬" loading="lazy"><figcaption>📷 哈斯台國家公園的普氏野馬——全球僅存兩百多隻（Kelsey r・CC BY 2.5・Wikimedia Commons）</figcaption></figure>
     <div class="hist">《蒙古秘史》記載，<b>巴彥戈壁</b>一帶曾是成吉思汗放羊牧馬的地方，13 世紀他在此以少勝多擊敗強大的乃蠻部落。<b>哈斯台國家公園</b>佔地五萬多公頃，是<b>普氏野馬（蒙古野馬）</b>全球唯一的野放棲息地——這種馬從未被人類馴化，一度在野外絕跡，靠荷蘭出資的復育計畫重回草原，目前僅剩兩百多隻、分成 16 群。別看蒙古馬嬌小，牠耐寒耐熱耐飢渴，正是當年成吉思汗橫掃歐亞的「秘密武器」。</div>
-    <div class="buy">牧民家送禮最佳時機——把台灣帶來的<b>玩具、文具</b>拿出來（手冊認證的最受歡迎禮物）。<b>望遠鏡今天雙倍好用</b>：白天找野馬（牠們常在遠處山坡避暑）、晚上看星空。防蚊液噴好，夏天草原牛蠅多。</div>
+    <div class="buy">牧民家送禮最佳時機——把台灣帶來的<b>玩具、文具</b>拿出來。<b>望遠鏡今天雙倍好用</b>：白天找野馬、晚上看星空。防蚊液噴好，夏天草原牛蠅多。</div>
     <div class="stayline">Mongol Nomadic Camp 蒙古包・2 人一室<b>獨立衛浴</b>（+976-8832-4411）</div>
   </div>
 </section>
@@ -389,13 +320,6 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
       </g>
       <rect x="308" y="92" width="24" height="26" fill="var(--sky-deep)"/>
     </g>
-    <g fill="var(--white-ger)" stroke="var(--stone)" stroke-width="1.5" transform="translate(90,84)">
-      <ellipse cx="30" cy="20" rx="22" ry="12"/>
-      <circle cx="8" cy="8" r="8"/>
-      <path d="M4 0 q-6 -8 0 -12 M12 0 q6 -8 0 -12" fill="none"/>
-      <rect x="16" y="28" width="4" height="14" rx="2"/><rect x="26" y="30" width="4" height="12" rx="2"/>
-      <rect x="36" y="30" width="4" height="12" rx="2"/><rect x="44" y="28" width="4" height="14" rx="2"/>
-    </g>
     <g transform="translate(480,86)">
       <rect x="0" y="6" width="26" height="30" rx="3" fill="var(--alert)"/>
       <path d="M6 8 q7 -14 14 0" stroke="var(--ink)" stroke-width="2.5" fill="none"/>
@@ -410,11 +334,11 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
       <li><b>上午</b> 渡假村牧民生活體驗、渡假村午餐 → 拉車返回烏蘭巴托</li>
       <li><b>下午</b> 喀什米爾羊毛旗艦店（非團體購物站，可走可不走）</li>
       <li><b>傍晚</b> 國營百貨公司：5F 紀念品＋喀什米爾專賣、1F 超市掃貨</li>
-      <li><b>晚餐</b> Yu Long 中餐廳（連吃三天蒙式料理後的中華胃救援 🍜）</li>
+      <li><b>晚餐</b> Yu Long 中餐廳 🍜</li>
     </ul>
     <figure class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ikh_Delguur_2023.jpg/960px-Ikh_Delguur_2023.jpg" alt="國營百貨" loading="lazy"><figcaption>📷 國營百貨 Ikh Delguur——當地人口中的「大商店」（Chinneeb・CC BY-SA 4.0・Wikimedia Commons）</figcaption></figure>
     <div class="hist">蒙古是<b>全球第二大喀什米爾產地</b>，佔全球市場約四成、僅次於中國——但蒙古走「自產自銷」路線，品質好價格卻比歐洲專櫃便宜一大截，Gobi、Goyo 都是國際級品牌。<b>國營百貨（State Department Store）</b>是烏蘭巴托最大的百貨、蘇聯時代傳承下來的老字號，當地人就叫它「大商店」。</div>
-    <div class="buy"><b>今天是主力採買日！</b>清單：①<b>喀什米爾圍巾／毛衣</b>（Gobi 單筆滿 50 萬₮ 記得辦退稅——護照登錄＋畫面拍照，流程見「錢與證件」）②<b>Shar Doctor 沙棘果油、沙棘果汁</b>（蒙古國民保健品）③1F 超市：<b>伏特加、松子、奶酪糖、魚子醬</b>。⚠️ 買零食避開含肉的——肉製品帶不回台灣！刷卡在這裡都通，人多處顧好包包。</div>
+    <div class="buy"><b>今天是主力採買日！</b>①<b>喀什米爾圍巾／毛衣</b>（Gobi 滿 50 萬₮ 記得退稅）②<b>Shar Doctor 沙棘果油</b>③1F 超市：<b>伏特加、松子、奶酪糖、魚子醬</b>。⚠️ 零食避開含肉的——肉製品帶不回台灣！人多處顧好包包。</div>
     <div class="stayline">The Blue Sky Hotel and Tower 5★（+976-7010-9889）</div>
   </div>
 </section>
@@ -444,14 +368,14 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="inner">
     <div class="head"><span class="dnum city">D5</span><h2>成吉思汗雙拼日</h2><span class="dt">7/18（六）</span></div>
     <ul class="route">
-      <li><b>上午</b> 成吉思汗國家博物館（建議路線：3F 遠古 → 8F 帝國，由下往上走一遍 2,000 年草原史）</li>
+      <li><b>上午</b> 成吉思汗國家博物館（3F 遠古 → 8F 帝國，2,000 年草原史）</li>
       <li><b>中午</b> 遊牧民族特色料理</li>
-      <li><b>下午</b> 成吉思汗雕像紀念館——搭電梯<b>登上馬頭</b>遠眺土拉河 → 車行 80 公里進特勒吉國家公園</li>
-      <li><b>傍晚</b> 渡假村晚餐，山谷空氣清新，早點休息迎接明天騎馬日</li>
+      <li><b>下午</b> 成吉思汗雕像紀念館——<b>登上馬頭</b>遠眺土拉河 → 車行 80 公里進特勒吉</li>
+      <li><b>傍晚</b> 渡假村晚餐，早點休息迎接明天騎馬日</li>
     </ul>
-    <figure class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mongolian_Goats_with_Genghis_Khan_Equestrian_Statue.jpg/960px-Mongolian_Goats_with_Genghis_Khan_Equestrian_Statue.jpg" alt="成吉思汗騎馬雕像" loading="lazy"><figcaption>📷 40 公尺高的成吉思汗騎馬雕像（前景是蒙古山羊）（Wikimedia Commons・CC BY-SA 3.0）</figcaption></figure>
-    <div class="hist"><b>成吉思汗國家博物館</b>2022 年 10 月開幕，九層樓、近 12,000 件文物、九成以上是真品原件。建築本身就是展品：圓弧穹頂來自蒙古包、頂上金鷹象徵成吉思汗、外牆掛著 320 個部落符號——紀念鐵木真統一 320 個草原部落。<b>騎馬雕像</b>立在傳說中成吉思汗撿到黃金馬鞭（君王之兆）的地方，2008 年落成，高 40 公尺、250 噸不鏽鋼，是世界最大的騎馬雕像；底座博物館裡還藏著一隻金氏紀錄的「世界最大靴子」。</div>
-    <div class="buy">博物館 1F 有<b>禮品店和咖啡館</b>——帝國風文創這裡最正宗。注意：部分展區<b>拍照要另外付費</b>，聽導遊指示。今晚住山區，外套備好。</div>
+    <figure class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mongolian_Goats_with_Genghis_Khan_Equestrian_Statue.jpg/960px-Mongolian_Goats_with_Genghis_Khan_Equestrian_Statue.jpg" alt="成吉思汗騎馬雕像" loading="lazy"><figcaption>📷 40 公尺高的成吉思汗騎馬雕像（Wikimedia Commons・CC BY-SA 3.0）</figcaption></figure>
+    <div class="hist"><b>成吉思汗國家博物館</b>2022 年 10 月開幕，九層樓、近 12,000 件文物、九成以上是真品原件。圓弧穹頂來自蒙古包、頂上金鷹象徵成吉思汗、外牆 320 個部落符號紀念鐵木真統一 320 個草原部落。<b>騎馬雕像</b>立在傳說中撿到黃金馬鞭（君王之兆）的地方，2008 年落成，高 40 公尺、250 噸不鏽鋼，世界最大騎馬雕像；底座還藏著金氏紀錄「世界最大靴子」。</div>
+    <div class="buy">博物館 1F 有<b>禮品店和咖啡館</b>——帝國風文創最正宗。部分展區<b>拍照要另外付費</b>。今晚住山區，外套備好。</div>
     <div class="stayline">Red Rock Resort 飯店區（+976-7700-0111）</div>
   </div>
 </section>
@@ -489,14 +413,14 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="inner">
     <div class="head"><span class="dnum">D6</span><h2>草原馳騁・喉音之夜</h2><span class="dt">7/19（日）</span></div>
     <ul class="route">
-      <li><b>上午</b> 特勒吉奇岩巡禮：烏龜石、駱駝石、亦豬亦狗化身石 → <b>草原騎馬 1 小時</b>（長褲＋包鞋，聽馬倌指令）</li>
-      <li><b>中午</b> <b>石頭燜羊肉</b>實作觀摩＋午餐；等燜煮時到附近草原散步、再訪牧民家</li>
-      <li><b>下午</b> 回烏蘭巴托 → 成吉思汗廣場（蘇赫巴托廣場）拍照</li>
-      <li><b>晚上</b> 蒙古傳統歌舞表演：喉音、軟骨功、馬頭琴 🎻</li>
+      <li><b>上午</b> 烏龜石、駱駝石 → <b>草原騎馬 1 小時</b>（長褲＋包鞋，聽馬倌指令）</li>
+      <li><b>中午</b> <b>石頭燜羊肉</b>實作觀摩＋午餐；等燜煮時再訪牧民家</li>
+      <li><b>下午</b> 回烏蘭巴托 → 成吉思汗廣場拍照</li>
+      <li><b>晚上</b> 蒙古傳統歌舞：喉音、軟骨功、馬頭琴 🎻</li>
     </ul>
     <figure class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Turtle_Rock_along_Route_3_of_Mongol_Olle_Trail_in_Gorkhi-Terelj_National_Park.jpg/960px-Turtle_Rock_along_Route_3_of_Mongol_Olle_Trail_in_Gorkhi-Terelj_National_Park.jpg" alt="烏龜石" loading="lazy"><figcaption>📷 特勒吉國家公園的烏龜石（Jeju Olle Foundation・CC BY 4.0・Wikimedia Commons）</figcaption></figure>
-    <div class="hist"><b>石頭燜羊肉（Khorkhog）</b>相傳是成吉思汗西征時的戰地料理——把燒燙的石頭和羊肉一起悶進容器，速戰速決卻香嫩入味，後來成了宮廷佳餚。<b>馬頭琴</b>的傳說：牧人蘇和痛失愛馬，夢中白馬囑咐「以我腿骨為琴頸、頭骨為琴筒、馬尾為絃」，琴聲從此淒美動人。<b>喉音（Khoomei）</b>更神：一個人同時發出低吟與哨音多部合聲，像草原的風穿過喉嚨；<b>軟骨功</b>表演者多從三歲開始練起。</div>
-    <div class="buy">歌舞表演票值 40,000₮（團費已含）——<b>表演中可否錄影聽現場規定</b>。廣場周邊人多，錢包手機前背。晚上回飯店：<b>今晚先把托運行李打包八成</b>。</div>
+    <div class="hist"><b>石頭燜羊肉（Khorkhog）</b>相傳是成吉思汗西征時的戰地料理——燒燙的石頭和羊肉一起悶煮，後來成了宮廷佳餚。<b>馬頭琴</b>傳說：牧人蘇和痛失愛馬，夢中白馬囑咐「以我腿骨為琴頸、頭骨為琴筒、馬尾為絃」。<b>喉音（Khoomei）</b>一個人同時發出低吟與哨音多部合聲；<b>軟骨功</b>表演者多從三歲開始練起。</div>
+    <div class="buy">表演可否錄影聽現場規定。廣場人多，錢包手機前背。<b>今晚先把托運行李打包八成</b>。</div>
     <div class="stayline">Best Western Premier Tuushin 5★（+976-1131-3162）</div>
   </div>
 </section>
@@ -521,14 +445,14 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="inner">
     <div class="head"><span class="dnum city">D7</span><h2>文化壓軸日</h2><span class="dt">7/20（一）</span></div>
     <ul class="route">
-      <li><b>上午</b> 翟山紀念碑——登高看烏蘭巴托全景（環形彩繪牆訴說近代戰役史）</li>
+      <li><b>上午</b> 翟山紀念碑——烏蘭巴托全景</li>
       <li><b>接著</b> 博格多汗冬宮博物館：末代皇帝的珍寶</li>
       <li><b>下午</b> 甘丹寺：26 公尺四臂觀音 → 買條<b>藍色哈達</b>保平安</li>
       <li><b>晚餐</b> The Bull 中式火鍋 → <b>回飯店完成打包</b>（明天凌晨 3 點多 morning call！）</li>
     </ul>
     <figure class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Oulan-Bator.-_Queti_in_Gandan_Monastery.jpg/960px-Oulan-Bator.-_Queti_in_Gandan_Monastery.jpg" alt="甘丹寺" loading="lazy"><figcaption>📷 甘丹寺——蒙古最大的藏傳佛教寺院（Wikimedia Commons・CC BY-SA 4.0）</figcaption></figure>
-    <div class="hist"><b>翟山紀念碑</b>紀念 1939 年哈拉哈河（諾門罕）戰役犧牲的蘇軍，環狀彩繪牆記錄近代戰史，也是全市最好的觀景台。<b>博格多汗冬宮</b>是末代帝王哲布尊丹巴八世的冬季居所、全蒙古第一座兩層樓房——裡面收著鑲玉龍袍、純金履衣、<b>800 顆珍珠做的衣袍</b>和 80 隻狐狸拼成的大衣。<b>甘丹寺</b>1838 年建成，曾是政教中心；原本的觀音像被蒙共熔成砲彈，1996 年蒙古人用青銅重鑄了 26 公尺高的四臂觀音——它的重生就是蒙古宗教復興的象徵。</div>
-    <div class="buy"><b>藍色哈達（Khadag）</b>是今天必買——藍色象徵永恆的蒼天，保平安又是最有意義的紀念品，甘丹寺周邊就買得到。最後檢查伴手禮：<b>肉乾肉鬆通通不能帶回台</b>、酒類注意限量、行動電源記得移回隨身包。</div>
+    <div class="hist"><b>翟山紀念碑</b>紀念 1939 年哈拉哈河（諾門罕）戰役犧牲的蘇軍，也是全市最好的觀景台。<b>博格多汗冬宮</b>是末代帝王哲布尊丹巴八世的冬季居所、全蒙古第一座兩層樓房——鑲玉龍袍、純金履衣、<b>800 顆珍珠衣袍</b>、80 隻狐狸大衣。<b>甘丹寺</b>1838 年建成；原觀音像被熔成砲彈，1996 年重鑄 26 公尺四臂觀音——它的重生就是蒙古宗教復興的象徵。</div>
+    <div class="buy"><b>藍色哈達（Khadag）</b>今天必買——藍色象徵永恆蒼天。最後檢查：<b>肉乾不能帶回台</b>、酒類限量、行動電源移回隨身包。</div>
     <div class="stayline">Best Western Premier Tuushin 5★（+976-1131-3162）</div>
   </div>
 </section>
@@ -544,8 +468,6 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
       <path d="M50 12 l-26 -22 h13 l24 20 Z" fill="var(--alert)"/>
       <path d="M50 28 l-26 22 h13 l24 -20 Z" fill="var(--alert)"/>
       <path d="M104 8 l16 -10 -6 16 Z" fill="var(--alert)"/>
-      <circle cx="30" cy="18" r="3" fill="var(--sky-soft)"/><circle cx="44" cy="18" r="3" fill="var(--sky-soft)"/>
-      <circle cx="58" cy="18" r="3" fill="var(--sky-soft)"/><circle cx="72" cy="18" r="3" fill="var(--sky-soft)"/>
     </g>
     <path d="M96 96 c-8 -12 -26 -6 -26 8 c0 10 14 18 26 26 c12 -8 26 -16 26 -26 c0 -14 -18 -20 -26 -8 Z" fill="var(--alert)"/>
     <path d="M0 130 Q200 116 420 126 T640 122 V150 H0 Z" fill="var(--hill2)"/>
@@ -554,40 +476,40 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="inner">
     <div class="head"><span class="dnum fly">D8</span><h2>回家日</h2><span class="dt">7/21（二）</span></div>
     <ul class="route">
-      <li><b>凌晨 3 點多</b> morning call，早餐是餐盒 → 前往機場</li>
+      <li><b>凌晨 3 點多</b> morning call，早餐是餐盒 → 機場</li>
       <li><b>06:20</b> OM-297 起飛 → <b>10:55</b> 抵香港（機上補眠）</li>
       <li><b>14:05</b> CI-910 → <b>15:55</b> 降落桃園 🏠</li>
-      <li>Gobi 有買滿 50 萬₮ 的話：<b>管制區前退稅機再操作一次＋拍照</b>，4 號登機門左邊 STATE BANK 領現金</li>
+      <li>Gobi 滿 50 萬₮：管制區前退稅機操作＋拍照，4 號登機門左邊 STATE BANK 領現金</li>
     </ul>
-    <div class="buy">入境台灣：<b>肉製品、新鮮水果不能帶</b>（罰 NT$3,000 起）；免稅額每人 NT$2 萬、酒 1 公升、3C 最多 5 部。沙棘油、羊毛製品、松子、伏特加（限量）都 OK。</div>
-    <div class="stayline">溫暖的家——記得把照片備份，然後開始想念草原 🌾</div>
+    <div class="buy">入境台灣：<b>肉製品、新鮮水果不能帶</b>（罰 NT$3,000 起）；免稅額每人 NT$2 萬、酒 1 公升、3C 最多 5 部。</div>
+    <div class="stayline">溫暖的家——記得備份照片，然後開始想念草原 🌾</div>
   </div>
 </section>
 <section id="s3">
   <h2><span class="emo">💰</span>錢與證件</h2>
   <h3>證件</h3>
   <ul>
-    <li><b>護照</b>：領隊辦完登機手續會發還，自己收好；當地規定出門要隨身帶</li>
-    <li><b>蒙古電子簽證</b>列印＋存手機；<b>台胞證／港簽</b>放隨身包（轉機查驗）</li>
+    <li><b>護照</b>：領隊辦完登機手續會發還；當地規定出門要隨身帶</li>
+    <li><b>蒙古電子簽證</b>列印＋存手機；<b>台胞證／港簽</b>放隨身包</li>
   </ul>
   <h3>貨幣與換匯</h3>
   <ul>
     <li>圖格里克（₮）：1 美元約 3,000–3,400₮（2026/4 參考）</li>
-    <li>台灣換不到蒙圖 → 帶<b>美金新鈔</b>去換（再說一次：舊鈔不收！）</li>
+    <li>台灣換不到蒙圖 → 帶<b>美金新鈔</b>去換（舊鈔不收！）</li>
     <li>市區可刷卡；小吃攤、草原只收現金；出境現金上限：台幣 10 萬、美金 1 萬</li>
   </ul>
   <h3>小費速查</h3>
   <div class="tablewrap"><table>
     <tr><th>項目</th><th>金額</th><th>備註</th></tr>
-    <tr><td>服務費</td><td>US$12／人／天</td><td>領隊代收（含司機導遊領隊）＝ US$96／人</td></tr>
+    <tr><td>服務費</td><td>US$12／人／天</td><td>領隊代收＝ US$96／人</td></tr>
     <tr><td>床頭小費</td><td>3,000–4,000₮ 或 US$1</td><td>每房每天</td></tr>
     <tr><td>行李小費</td><td>3,000–4,000₮ 或 US$1</td><td>每件每次</td></tr>
   </table></div>
   <h3>Gobi 羊毛店退稅（滿 50 萬₮ 退 10%）</h3>
   <ul>
-    <li>店內機器：輸護照號 → E-mail ×2 → 台灣手機（去 0）→ <b>畫面拍照！</b></li>
-    <li>機場管制區前同款機器再操作一次 → <b>再拍照！</b></li>
-    <li>候機室 4 號登機門左邊 <b>STATE BANK</b> 憑照片領現金（系統還在發展中，不保證成功）</li>
+    <li>店內機器：護照號 → E-mail ×2 → 台灣手機（去 0）→ <b>畫面拍照！</b></li>
+    <li>機場管制區前同款機器再操作 → <b>再拍照！</b></li>
+    <li>4 號登機門左邊 <b>STATE BANK</b> 憑照片領現金（不保證成功）</li>
   </ul>
 </section>
 
@@ -606,13 +528,13 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="cols">
     <ul>
       <li>短袖 3–4 件＋薄長袖 2 件</li>
-      <li>薄長褲 2–3 件（<b>騎馬騎駱駝：長褲＋包鞋</b>，禁涼拖鞋短裙）</li>
+      <li>薄長褲 2–3 件（<b>騎馬騎駱駝：長褲＋包鞋</b>）</li>
       <li>防風防水外套＋薄羽絨或刷毛</li>
-      <li>騎駱駝日<b>別穿紅色</b>——駱駝看到紅色會抓狂 🐫</li>
+      <li>騎駱駝日<b>別穿紅色</b> 🐫</li>
     </ul>
     <ul>
       <li>好走的運動鞋＋拖鞋</li>
-      <li>遮陽帽＋墨鏡＋薄圍巾／口罩（防風沙）</li>
+      <li>遮陽帽＋墨鏡＋薄圍巾／口罩</li>
       <li>襪子多兩雙、保暖睡衣</li>
       <li>摺疊傘或輕便雨衣</li>
     </ul>
@@ -621,17 +543,17 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="cols">
     <ul>
       <li><span class="tag must">必</span>防曬乳＋護唇膏＋保濕乳霜</li>
-      <li><span class="tag must">必</span>藥品組：腸胃藥、感冒藥、暈車藥、個人藥、維他命 C</li>
-      <li><span class="tag must">必</span>盥洗全套自備：毛巾、牙刷、肥皂、洗髮精（飯店多不提供）</li>
-      <li><span class="tag must">必</span>轉接頭（220V 歐規圓腳）＋行動電源（≤2 顆隨身）</li>
+      <li><span class="tag must">必</span>腸胃藥、感冒藥、暈車藥、個人藥、維他命 C</li>
+      <li><span class="tag must">必</span>盥洗全套自備（飯店多不提供）</li>
+      <li><span class="tag must">必</span>轉接頭（220V 歐規圓腳）＋行動電源</li>
       <li><span class="tag must">必</span>手電筒＋衛生紙＋濕紙巾＋乾洗手</li>
     </ul>
     <ul>
-      <li><span class="tag rec">推</span><b>望遠鏡</b>——白天找野馬、晚上看銀河</li>
-      <li><span class="tag rec">推</span>眼罩耳塞（凌晨集合＋草原天亮早）</li>
-      <li><span class="tag rec">推</span>防蚊液（夏季牛蠅蚊蟲多）</li>
-      <li><span class="tag rec">推</span>保溫瓶（過安檢記得倒空）</li>
-      <li><span class="tag rec">推</span>牧民家伴手禮：<b>玩具、文具</b>最受歡迎 🎁</li>
+      <li><span class="tag rec">推</span><b>望遠鏡</b>——找野馬＋看銀河</li>
+      <li><span class="tag rec">推</span>眼罩耳塞</li>
+      <li><span class="tag rec">推</span>防蚊液</li>
+      <li><span class="tag rec">推</span>保溫瓶（過安檢倒空）</li>
+      <li><span class="tag rec">推</span>牧民家禮物：<b>玩具、文具</b> 🎁</li>
     </ul>
   </div>
 </section>
@@ -640,13 +562,13 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <h2><span class="emo">📶</span>實用情報站</h2>
   <div class="tablewrap"><table>
     <tr><th>項目</th><th>內容</th></tr>
-    <tr><td>時差</td><td>烏蘭巴托與台灣<b>零時差</b>！</td></tr>
-    <tr><td>網路電話</td><td>台灣手機可漫遊；撥台灣 +886 去 0。<b>草原戈壁大段沒訊號</b>，先跟家人約好報平安時段</td></tr>
-    <tr><td>電壓插座</td><td>220V、圓柱 2 腳（歐規）；蒙古包營區有電、戶外暗 → 手電筒</td></tr>
-    <tr><td>吃喝</td><td>喝瓶裝水；肉全熟上桌；蔬果靠進口、超市買得到；馬奶酒淺嚐即可 🍶</td></tr>
-    <tr><td>語言</td><td>喀爾喀蒙古語；英語只在旅遊圈通、華語不通——跟緊領隊</td></tr>
-    <tr><td>治安</td><td>大致平和，但<b>景區、超市、車站扒手多</b>：財不露白、護照隨身、晚上不落單</td></tr>
-    <tr><td>拍照</td><td>部分景點拍照<b>要另外付費</b>（含手機），聽導遊的</td></tr>
+    <tr><td>時差</td><td>與台灣<b>零時差</b>！</td></tr>
+    <tr><td>網路電話</td><td>台灣手機可漫遊；撥台灣 +886 去 0。<b>草原戈壁大段沒訊號</b></td></tr>
+    <tr><td>電壓插座</td><td>220V、圓柱 2 腳（歐規）；蒙古包營區有電</td></tr>
+    <tr><td>吃喝</td><td>喝瓶裝水；肉全熟；馬奶酒淺嚐 🍶</td></tr>
+    <tr><td>語言</td><td>喀爾喀蒙古語；華語不通——跟緊領隊</td></tr>
+    <tr><td>治安</td><td><b>景區、超市、車站扒手多</b>：財不露白、護照隨身、不落單</td></tr>
+    <tr><td>拍照</td><td>部分景點拍照<b>要付費</b>（含手機）</td></tr>
     <tr><td>門票行情</td><td>成吉思汗博物館 30,000₮、冬宮 20,000₮、甘丹寺 20,000₮、歌舞 40,000₮（團費已含）</td></tr>
   </table></div>
 </section>
@@ -654,14 +576,14 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
 <section id="s6">
   <h2><span class="emo">🏕</span>蒙古包禮儀小學堂</h2>
   <ul>
-    <li>🐕 每戶牧民都養狗而且<b>很兇</b>——一定要主人陪同才靠近</li>
-    <li>🚪 <b>門檻代表主人身分，絕對不踩</b>；門很矮小心撞頭——真撞到了，習俗是拿一塊牛糞燃料丟進爐火</li>
-    <li>↩️ 進包<b>往左邊入座</b>；中間是長者位、右邊是主人位；不倚靠中心柱</li>
-    <li>🦶 坐下時腳底不朝火爐、主人、佛龕</li>
+    <li>🐕 每戶牧民都養狗而且<b>很兇</b>——要主人陪同才靠近</li>
+    <li>🚪 <b>門檻不能踩</b>；門矮小心撞頭——撞到了習俗是拿牛糞燃料丟進爐火</li>
+    <li>↩️ 進包<b>往左入座</b>；中間長者位、右邊主人位；不倚中心柱</li>
+    <li>🦶 腳底不朝火爐、主人、佛龕</li>
     <li>🍶 <b>敬酒禮</b>：雙手接碗，右手無名指沾酒<b>對空彈三下</b>——敬天、敬地、敬祖先</li>
     <li>🔥 爐火最神聖：不吐痰、不丟垃圾、不跨越</li>
-    <li>👶 <b>不摸小孩的頭</b>（額頭是天靈蓋，大忌）</li>
-    <li>💙 甘丹寺買條<b>藍色哈達</b>，保平安又是最有意義的紀念品</li>
+    <li>👶 <b>不摸小孩的頭</b></li>
+    <li>💙 甘丹寺買條<b>藍色哈達</b>保平安</li>
   </ul>
 </section>
 
@@ -669,25 +591,25 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <h2><span class="emo">🐴</span>健康與騎乘安全</h2>
   <h3>健康</h3>
   <ul>
-    <li>免黃皮書免打針；<b>沒有高山症問題</b>，安心玩</li>
-    <li>D2 拉車 380km 最操——暈車藥出發前 30 分鐘吃、頸枕備好</li>
-    <li>超乾燥＋UV 爆表：防曬 2–3 小時補一次、水狂喝</li>
-    <li>當地藥局不普遍——<b>常用藥全帶足、放隨身</b></li>
-    <li>飯店熱水壺只能煮水（不能煮泡麵！壞了要賠）</li>
+    <li>免打針；<b>沒有高山症問題</b></li>
+    <li>D2 拉車 380km——暈車藥出發前 30 分鐘吃</li>
+    <li>超乾燥＋UV 爆表：防曬勤補、水狂喝</li>
+    <li>當地藥局不普遍——<b>常用藥帶足、放隨身</b></li>
+    <li>飯店熱水壺只能煮水（不能煮泡麵）</li>
   </ul>
   <h3>騎馬三大鐵則（D6）</h3>
   <ul>
-    <li><b>不站馬屁股後面</b>（會被踢）、不站正前方盲點、跟前馬隔一個馬身</li>
-    <li>上馬前請馬主<b>檢查肚帶</b>；一律<b>從左側</b>上下馬</li>
-    <li>失控時抓緊韁繩慢慢拉、喊「吁——」；<b>不尖叫、不跳馬</b>；摔了先別動，防被踩</li>
+    <li><b>不站馬屁股後面</b>、不站正前方盲點、跟前馬隔一個馬身</li>
+    <li>上馬前請馬主<b>檢查肚帶</b>；<b>從左側</b>上下馬</li>
+    <li>失控時抓緊韁繩喊「吁——」；<b>不尖叫、不跳馬</b>；摔了先別動</li>
   </ul>
   <h3>騎駱駝三大鐵則（D3）</h3>
   <ul>
-    <li>駱駝起身「三起三落」超晃——<b>先抓牢扶手，別急著自拍</b></li>
-    <li><b>不穿紅色、不撐傘</b>（駱駝會受驚）</li>
-    <li>不摸眼睛屁股、不站後腳與頭旁邊</li>
+    <li>起身「三起三落」超晃——<b>先抓牢扶手</b></li>
+    <li><b>不穿紅色、不撐傘</b></li>
+    <li>不摸眼睛屁股、不站後腳與頭旁</li>
   </ul>
-  <div class="fun">💡 心臟病、高血壓、懷孕、癲癇等狀況不宜騎乘——在旁邊當攝影師也很快樂。</div>
+  <div class="fun">💡 心臟病、高血壓、懷孕、癲癇不宜騎乘——當攝影師也很快樂。</div>
 </section>
 
 <section id="s8">
@@ -695,18 +617,17 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <div class="emg">
     <h3 style="margin-top:0">領隊（有事第一個找他）</h3>
     <div class="num">領隊電話：見出團通知書</div>
-    <ul style="margin-top:4px"><li>送機人員電話：見出團通知書（7/14 桃園機場）</li></ul>
     <h3>駐烏蘭巴托台北貿易經濟代表處</h3>
     <div class="num">急難救助 +976 9909-1213</div>
     <ul style="margin-top:8px">
-      <li>一般洽公：+976-11-328705、322735（週一至五 09:00–18:00）</li>
+      <li>一般洽公：+976-11-328705、322735</li>
       <li>外交部旅外急難救助免付費：<b>+886 800-085-095</b></li>
     </ul>
     <h3>蒙古當地報案</h3>
     <div class="num">警察 102 ・ 救護 103 ・ 消防 101</div>
     <h3>個人緊急聯絡</h3>
     <ul style="margin-bottom:0">
-      <li>台灣緊急聯絡人電話：存於同行者手機（國外撥台灣：+886 去開頭的 0）</li>
+      <li>台灣緊急聯絡人電話：存於同行者手機（撥台灣 +886 去 0）</li>
       <li>每晚飯店電話見各日卡片</li>
     </ul>
   </div>
@@ -716,21 +637,21 @@ figure.photo figcaption{font-size:12px; color:var(--muted); padding:6px 12px; li
   <h2><span class="emo">🛬</span>回程與權益</h2>
   <h3>回台海關（7/21）</h3>
   <ul>
-    <li>🚫 <b>肉製品絕對不能帶回台灣</b>——蒙古肉乾、香腸、含肉零食都算（罰 NT$3,000 起）；新鮮水果也不行</li>
-    <li>✅ 沙棘油、羊毛製品、松子、伏特加（限量）都 OK</li>
+    <li>🚫 <b>肉製品、新鮮水果不能帶</b>（罰 NT$3,000 起）</li>
+    <li>✅ 沙棘油、羊毛製品、松子、伏特加（限量）OK</li>
     <li>免稅額：每人 NT$2 萬；3C 最多 5 部</li>
   </ul>
   <h3>合約權益備忘</h3>
   <ul>
     <li><b>蒙古包獨立衛浴</b>：出團手冊明載 D2、D3 皆「2 人一室・獨立衛浴」✓</li>
     <li><b>履約保證險</b>：官網寫 500 萬＋醫療 20 萬</li>
-    <li>行程有項目沒走到 → 當下請領隊註記；手冊明載會「調整順序或退門票費」</li>
-    <li>回國 30 天內可向旅行社或品保協會（02-2599-5088）申訴</li>
+    <li>行程沒走到 → 請領隊註記；會「調整順序或退門票費」</li>
+    <li>回國 30 天內可向品保協會（02-2599-5088）申訴</li>
   </ul>
 </section>
 
 <footer>
-  資料來源：誠旺旅行社出團手冊、<a href="https://www.loyaltytour.com.tw/products/group/mold/ULN0000C">誠旺團型頁</a>、<a href="https://www.roc-taiwan.org/mn/index.html">駐烏蘭巴托代表處</a>。行程以領隊現場宣布為準。實景照片來自 Wikimedia Commons（CC BY／CC BY-SA 授權，攝影者標註於各圖說）。<br>
+  資料來源：誠旺旅行社出團手冊、<a href="https://www.loyaltytour.com.tw/products/group/mold/ULN0000C">誠旺團型頁</a>、<a href="https://www.roc-taiwan.org/mn/index.html">駐烏蘭巴托代表處</a>。實景照片來自 Wikimedia Commons（CC 授權，攝影者標註於圖說）。<br>
   Сайн яваарай！一路平安，把草原的風帶回來 🐎🌾
 </footer>
 </div>
@@ -760,8 +681,28 @@ function seedStars(gid, n, w, h){
     g.appendChild(c);
   }
 }
-seedStars('heroStars', 46, 640, 95);
 seedStars('d2stars', 64, 640, 96);
+(function(){
+  var g=document.getElementById('dawnStars');
+  if(g){for(var i=0;i<120;i++){var s=document.createElement('i');
+    var sz=(Math.random()*1.9+0.6).toFixed(1);
+    s.style.width=sz+'px'; s.style.height=sz+'px';
+    s.style.left=(Math.random()*100).toFixed(2)+'%';
+    s.style.top=(Math.random()*70).toFixed(2)+'%';
+    s.style.animationDelay=(Math.random()*4).toFixed(2)+'s';
+    s.style.animationDuration=(2.2+Math.random()*3).toFixed(2)+'s';
+    g.appendChild(s);}}
+  var t=new Date('2026-07-14T05:00:00+08:00').getTime();
+  var end=new Date('2026-07-21T16:00:00+08:00').getTime();
+  function tick(){var el=document.getElementById('cd'); if(!el)return; var now=Date.now();
+    if(now>=end){el.innerHTML='🏠 歡迎回家！草原會想你的'; return}
+    if(now>=t){el.innerHTML='🐎 旅程進行中——把握每一刻！'; return}
+    var d=t-now;
+    document.getElementById('cdD').textContent=Math.floor(d/86400000);
+    document.getElementById('cdH').textContent=Math.floor(d%86400000/3600000);
+    document.getElementById('cdM').textContent=Math.floor(d%3600000/60000);}
+  tick(); setInterval(tick,30000);
+})();
 (function(){
   var targets = document.querySelectorAll('.dayfull, section:not(.dayfull), figure.photo');
   if(!('IntersectionObserver' in window)){ return; }
@@ -777,5 +718,4 @@ seedStars('d2stars', 64, 640, 96);
   });
 })();
 </script>
-
 </html>
