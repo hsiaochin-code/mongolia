@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>東北雪國銀山溫泉</title>
+<style>
+:root{
+  --bg:#F3F7FB; --ink:#23303C; --muted:#5F7285; --line:#D8E4EE;
+  --sky:#1E6FC8; --sky-soft:#E1EEFB;
+  --grass:#3E9A5C; --grass-soft:#E3F3E7;
+  --sun:#C98410; --sun-soft:#FDF1D7;
+  --alert:#D04E30; --alert-soft:#FDEAE3;
+  --card:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1622; --ink:#E9EEF4; --muted:#93A3B5; --line:#243447;
+    --sky:#6FB1F2; --sky-soft:#16283C;
+    --grass:#5FBF7E; --grass-soft:#15291D;
+    --sun:#F5BE4F; --sun-soft:#2E2512;
+    --alert:#F08A6C; --alert-soft:#361D15;
+    --card:#182335;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1622; --ink:#E9EEF4; --muted:#93A3B5; --line:#243447;
+  --sky:#6FB1F2; --sky-soft:#16283C;
+  --grass:#5FBF7E; --grass-soft:#15291D;
+  --sun:#F5BE4F; --sun-soft:#2E2512;
+  --alert:#F08A6C; --alert-soft:#361D15;
+  --card:#182335;
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--bg); color:var(--ink);
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+  line-height:1.75; font-size:16px}
+main{max-width:860px; margin:0 auto; padding:0 16px 48px}
+header{padding:32px 0 12px}
+h1{font-size:28px; margin:0 0 4px}
+h2{font-size:21px; margin:36px 0 12px; padding-bottom:6px; border-bottom:2px solid var(--line)}
+h3{font-size:17px; margin:0 0 6px}
+.sub{color:var(--muted); margin:0}
+.card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin:12px 0}
+.rec{border:2px solid var(--grass); background:var(--grass-soft)}
+.warn{background:var(--alert-soft); border-color:var(--alert)}
+.note{background:var(--sun-soft); border-color:var(--sun)}
+.tag{display:inline-block; font-size:12.5px; padding:1px 8px; border-radius:99px; background:var(--sky-soft); color:var(--sky); margin-right:4px; font-weight:600}
+.tag.g{background:var(--grass-soft); color:var(--grass)}
+.tag.a{background:var(--alert-soft); color:var(--alert)}
+.tbl{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:14.5px; background:var(--card)}
+th,td{border:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top}
+th{background:var(--sky-soft)}
+.cal{display:grid; grid-template-columns:repeat(10,1fr); gap:4px; font-size:13px; text-align:center}
+.cal div{border-radius:8px; padding:6px 0; background:var(--card); border:1px solid var(--line)}
+.cal .we{color:var(--muted)}
+.cal .lv{background:var(--sun-soft); border-color:var(--sun); font-weight:700}
+.cal .gz{background:var(--grass-soft); border-color:var(--grass); font-weight:700}
+.day{display:grid; grid-template-columns:78px 1fr; gap:10px; padding:10px 0; border-bottom:1px dashed var(--line)}
+.day:last-child{border-bottom:0}
+.day b.d{color:var(--sky)}
+ul{padding-left:20px; margin:6px 0}
+small,.muted{color:var(--muted)}
+a{color:var(--sky)}
+@media (max-width:520px){
+  .cal{grid-template-columns:repeat(5,1fr)}
+  .day{grid-template-columns:1fr; gap:2px}
+}
+</style>
+<main>
+<header>
+  <h1>東北雪國 × 銀山溫泉</h1>
+  <p class="sub">2027/1/22–1/31 可出發・請假 3–4 天・已訂 1/29（五）銀山溫泉｜機票比較與行程建議</p>
+  <p class="sub"><small>資料整理日：2026/9/25。班表與票價為網路公開資訊及歷史價位，下單前請到航空公司官網再確認。</small></p>
+</header>
+
+<div class="card rec">
+  <h3>結論先講</h3>
+  <ul>
+    <li><b>飛仙台（SDJ）</b>是最佳選擇：桃園直飛約 3.5 小時，仙台到銀山溫泉 2–3 小時，比飛東京再搭新幹線省錢又省時間。</li>
+    <li><b>最推：1/26（二）去 → 1/31（日）回，請 4 天，6 天 5 夜</b>。搭台灣虎航來回最便宜；回程虎航傍晚才起飛，最後一天還能玩松島。</li>
+    <li>只想請 3 天：<b>1/27（三）去 → 1/31（日）回</b>，去程搭長榮早班或星宇，回程搭虎航或星宇（可以兩段分開買單程）。</li>
+    <li>1 月底在農曆春節（2027/2/6）前，是淡季，票價偏低，但虎航促銷很快就賣完，<b>建議近期先把機票訂好</b>。</li>
+  </ul>
+</div>
+
+<h2>請假日曆</h2>
+<div class="cal" aria-label="2027年1月22日至31日">
+  <div>1/22<br>五</div><div class="we">1/23<br>六</div><div class="we">1/24<br>日</div><div>1/25<br>一</div>
+  <div class="lv">1/26<br>二</div><div class="lv">1/27<br>三</div><div class="lv">1/28<br>四</div><div class="gz">1/29<br>五♨</div>
+  <div class="we">1/30<br>六</div><div class="we">1/31<br>日</div>
+</div>
+<p class="muted"><small>黃色＝方案 A 請假日（4 天）；方案 B 從 1/27 開始請（3 天）。綠色＝已訂銀山溫泉。若從 1/22 出發，需請 1/22＋1/25–1/29 共 6 天，超出預算，所以不建議提早出發。</small></p>
+
+<h2>機票比較：台北 ⇄ 仙台直飛</h2>
+<div class="tbl"><table>
+  <tr><th>航空</th><th>去程（桃園→仙台）</th><th>回程（仙台→桃園）</th><th>飛行日</th><th>來回參考價（含稅）</th></tr>
+  <tr><td><span class="tag g">最便宜</span><br><b>台灣虎航</b><br>IT254 / IT255</td><td>13:45 → 18:10</td><td>19:00 → 21:55</td><td>約每週 3–5 班，過去排在二、四、日 <span class="tag a">待確認</span></td><td>促銷約 <b>NT$7,200 起</b>；一般約 9,000–13,000<br><small>未含托運行李，每段加購約 NT$1,000–2,000</small></td></tr>
+  <tr><td><b>長榮航空</b><br>BR118 / BR117</td><td>08:45 → 13:00</td><td>14:30 → 17:45<br><small>另有資料顯示 16:05 起飛</small></td><td>二、三、四、六 <span class="tag a">待確認</span></td><td>約 <b>NT$17,900 起</b><br><small>含 23kg 行李與餐點</small></td></tr>
+  <tr><td><b>星宇航空</b><br>JX862 / JX863</td><td>11:40 → 16:00</td><td>17:20 → 20:10</td><td>每日</td><td>約 <b>NT$19,600 起</b><br><small>含行李與餐點</small></td></tr>
+</table></div>
+<p class="muted"><small>時間皆為當地時間（日本比台灣快 1 小時）。虎航冬季班表每年會調整，請以官網 1 月的實際班次為準。</small></p>
+
+<div class="card note">
+  <h3>省錢撇步</h3>
+  <ul>
+    <li><b>兩段分開買</b>：去程和回程可以買不同航空的單程票（例如去程長榮、回程虎航），常常比同一家來回更便宜，時間也更好。</li>
+    <li>訂閱<b>虎航會員電子報</b>，促銷通常會提早通知；日本官網也常有日幣計價的促銷（例如 2026/9 的仙台單程未稅 ¥9,900 起，搭乘期間到 2027/3/27）。</li>
+    <li>冬天衣服比較厚重，<b>回程托運行李一定要先加購</b>，機場現場加購會貴很多。</li>
+    <li>比價可以用 Google Flights 或 Skyscanner，選「彈性日期」查看 1/26–1/28 出發、1/30–1/31 回程哪一天最便宜。</li>
+  </ul>
+</div>
+
+<h3>備案：飛東京再搭新幹線，划算嗎？</h3>
+<div class="tbl"><table>
+  <tr><th></th><th>飛仙台</th><th>飛東京＋山形新幹線</th></tr>
+  <tr><td>機票</td><td>虎航約 7,200–13,000</td><td>廉航約 7,000–9,000</td></tr>
+  <tr><td>陸路交通（來回）</td><td>仙台⇄大石田 JR 單程 ¥1,690</td><td>東京⇄大石田新幹線 單程約 ¥11,000–12,000（來回約 NT$5,000）</td></tr>
+  <tr><td>單程到銀山溫泉</td><td>約 2–3 小時</td><td>約 4 小時以上</td></tr>
+  <tr><td>結論</td><td><b>總花費較低、交通時間短</b></td><td>只有在東京機票特價很多時才考慮</td></tr>
+</table></div>
+<p class="muted"><small>JR 東日本周遊券新版 5 日券為 ¥35,000，這趟行程的車資遠低於這個金額，<b>不需要買</b>，直接用 Suica 或買單程票就可以。</small></p>
+
+<h2>方案 A（推薦）：1/26 二 – 1/31 日｜請 4 天｜6 天 5 夜</h2>
+<p><span class="tag g">來回虎航</span><span class="tag">山寺</span><span class="tag">藏王樹冰</span><span class="tag">銀山溫泉</span><span class="tag">松島</span></p>
+<div class="card">
+  <div class="day"><b class="d">1/26 二</b><div><b>桃園 → 仙台</b>｜虎航 IT254 13:45 起飛，18:10 抵達<br>搭仙台機場線到仙台站（約 25 分鐘），晚餐吃牛舌。<br><small>住：仙台站附近</small></div></div>
+  <div class="day"><b class="d">1/27 三</b><div><b>山寺（立石寺）→ 藏王溫泉</b><br>早上搭 JR 仙山線到山寺站（約 1 小時），爬 1,015 階石梯看雪景（冬天階梯容易滑，建議穿防滑鞋或準備冰爪）。下午到山形站，搭巴士到藏王溫泉（約 40 分鐘），晚上看樹冰點燈。<br><small>住：藏王溫泉（強酸性硫磺泉）</small></div></div>
+  <div class="day"><b class="d">1/28 四</b><div><b>藏王樹冰（白天）→ 山形市區</b><br>早上搭藏王纜車上山頂看「雪怪」樹冰，1 月底正是觀賞旺季。下午回到山形市區，逛霞城公園、吃山形冷拉麵或芋煮。<br><small>住：山形站附近，或天童溫泉</small></div></div>
+  <div class="day"><b class="d">1/29 五</b><div><b>銀山溫泉 ♨（已訂）</b><br>山形站搭 JR 到大石田站（約 40–60 分鐘），再轉巴士到銀山溫泉（約 35 分鐘，¥1,000，只收現金）。<br>傍晚看瓦斯燈點亮、雪中大正風情，這是整趟旅程的重點。<br><small>住：銀山溫泉旅館</small></div></div>
+  <div class="day"><b class="d">1/30 六</b><div><b>銀山溫泉早晨 → 仙台</b><br>清早溫泉街人最少，最適合拍照（攝影首選時段）。中午搭巴士到大石田，轉 JR 回仙台（2–3 小時）。下午逛一番町、定禪寺通。<br><small>住：仙台</small></div></div>
+  <div class="day"><b class="d">1/31 日</b><div><b>松島 → 仙台機場 → 桃園</b><br>早上搭 JR 仙石線到松島海岸（約 40 分鐘），搭遊覽船、吃烤牡蠣。15:30 前出發往機場，17:00 前到機場。<br>虎航 IT255 19:00 起飛，21:55 抵達桃園。</div></div>
+</div>
+
+<h2>方案 B：1/27 三 – 1/31 日｜請 3 天｜5 天 4 夜</h2>
+<p><span class="tag">去程長榮早班或星宇</span><span class="tag g">回程虎航或星宇</span></p>
+<div class="card">
+  <div class="day"><b class="d">1/27 三</b><div><b>桃園 → 仙台 → 山形</b>｜長榮 BR118 08:45 起飛，13:00 抵達（或星宇 JX862 11:40 起飛，16:00 抵達）<br>直接移動到山形，搭長榮的話，當天還來得及去藏王溫泉看樹冰夜景。<br><small>住：藏王溫泉或山形</small></div></div>
+  <div class="day"><b class="d">1/28 四</b><div><b>藏王樹冰 → 山寺</b><br>早上搭纜車看樹冰，下午去山寺（山形站到山寺站約 20 分鐘）。<br><small>住：山形</small></div></div>
+  <div class="day"><b class="d">1/29 五</b><div><b>銀山溫泉 ♨（已訂）</b>，交通方式同方案 A。</div></div>
+  <div class="day"><b class="d">1/30 六</b><div><b>銀山溫泉早晨 → 仙台</b><br><small>住：仙台</small></div></div>
+  <div class="day"><b class="d">1/31 日</b><div><b>松島半日遊 → 回台</b>｜虎航 19:00 或星宇 17:20 起飛</div></div>
+</div>
+<p class="muted"><small>方案 B 最大的缺點是去程：虎航如果只有二、四、日飛，週三沒有虎航班次，只能搭長榮或星宇，機票會比方案 A 貴。</small></p>
+
+<h2>預估花費（每人・新台幣）</h2>
+<div class="tbl"><table>
+  <tr><th>項目</th><th>方案 A（虎航來回）</th><th>方案 B（長榮去＋虎航回）</th></tr>
+  <tr><td>機票（含稅＋托運行李）</td><td>約 10,000–15,000</td><td>約 14,000–18,000</td></tr>
+  <tr><td>當地交通</td><td>約 3,000–3,500</td><td>約 2,800–3,300</td></tr>
+  <tr><td>藏王纜車（來回）</td><td colspan="2">約 900–1,000（日幣約 ¥4,000–4,500）</td></tr>
+  <tr><td>住宿（不含已訂的銀山溫泉）</td><td>4 晚，約 10,000–16,000</td><td>3 晚，約 8,000–13,000</td></tr>
+</table></div>
+<p class="muted"><small>日圓以約 0.21 換算；藏王溫泉旅館多含早晚餐，價格較高。</small></p>
+
+<h2>注意事項</h2>
+<div class="card warn">
+  <ul>
+    <li><b>下大雪時電車可能停駛或誤點</b>：仙山線、奧羽本線冬天常常延誤。最後一天把回機場的時間排寬鬆一點；虎航回程傍晚才起飛，比較有彈性。</li>
+    <li><b>銀山溫泉冬季管制</b>：過去幾季（12 月下旬到 3 月初），下午 4 點後不開放一日遊旅客入場。你有住宿，不受這個限制，但請向旅館確認是否提供<b>大石田站接送</b>，以及入住時該怎麼進入溫泉街。2026–27 年的管制細則目前（9 月）還沒公布。</li>
+    <li>大石田站到銀山溫泉的巴士<b>只收現金</b>，請先準備好零錢。</li>
+    <li>藏王山頂體感溫度可能低於 −10°C，並可能因強風暫停纜車；最好排 2 個可以上山的時段（方案 A 排了 1/27 晚上和 1/28 白天）。</li>
+    <li>相機電池在低溫下耗電很快，建議多帶備用電池並放在口袋裡保暖；從室外進到室內時，鏡頭容易起霧結露。</li>
+  </ul>
+</div>
+
+<h2>下一步</h2>
+<div class="card">
+  <ol>
+    <li>到<a href="https://www.tigerairtw.com/zh-TW/">虎航官網</a>查 1/26、1/28 去程，1/31 回程的班次和價格（確認 1 月是否有二、四、日的班次）。</li>
+    <li>同時查<a href="https://www.evaair.com/">長榮</a>與<a href="https://www.starlux-airlines.com/">星宇</a>的單程票價，比較「分開買兩張單程」的組合。</li>
+    <li>訂好機票後，接著訂 1/26 仙台、1/27 藏王溫泉、1/28 山形、1/30 仙台的住宿。</li>
+    <li>聯絡銀山溫泉旅館，確認接送服務和冬季入場方式。</li>
+  </ol>
+</div>
+
+<h2>資料來源</h2>
+<ul class="muted" style="font-size:14px">
+  <li><a href="https://www.flightconnections.com/flights-from-tpe-to-sdj">FlightConnections：台北–仙台直飛航線</a></li>
+  <li><a href="https://www.starlux-airlines.com/flights/en/flights-from-taipei-to-sendai">星宇航空：台北–仙台票價</a>・<a href="https://flights.evaair.com/en/flights-from-taipei-to-sendai">長榮航空：台北–仙台票價</a></li>
+  <li><a href="https://nicklee.tw/3244/jx862-jx863/">小氣少年：JX862/JX863 搭乘紀錄</a>・<a href="https://www.hopegoo.com/zh-hk/hot-flights/flight-number/br118/">HopeGoo：BR118 班表</a>・<a href="https://www.airpaz.com/zh-tw/flight/code/IT-254">Airpaz：IT254 班表</a></li>
+  <li><a href="https://roundtripjp.com/2026/09/18/lcc-sale-guide-95/">巡日旅行攝：虎航日網促銷（2026/9）</a>・<a href="https://flight.eztravel.com.tw/tickets-tpe-sdj">易遊網：台北–仙台機票</a></li>
+  <li><a href="https://mimigo.tw/ginzan-onsen/">Mimi韓：銀山溫泉交通攻略</a>・<a href="https://tohoku.letsgojp.com/archives/690926/">樂吃購：銀山溫泉冬季管制</a>・<a href="https://matcha-jp.com/tw/26107">MATCHA：銀山溫泉冬季入場規定</a></li>
+  <li><a href="https://tohoku.letsgojp.com/archives/287200/">樂吃購：藏王樹冰攻略</a>・<a href="https://travel.yamakobus.jp/zh-tw/timetable/routebus-yamagata-zaoline.html">山形交通：山形–藏王巴士</a></li>
+  <li><a href="https://www.letsgojp.com/archives/843516/">樂吃購：新版 JR EAST PASS</a></li>
+</ul>
+</main>
+</html>
