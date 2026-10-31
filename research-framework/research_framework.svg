@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1060" viewBox="0 0 1800 1060" font-family="'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif">
+<defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1800" height="1060" fill="#fff"/>
+<rect x="40" y="40" width="600" height="44" fill="#eee" stroke="#000" stroke-width="1.2"/>
+<text x="340.0" y="69" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">旅前階段（Pre-trip）：旅遊誘因</text>
+<rect x="720" y="40" width="340" height="44" fill="#eee" stroke="#000" stroke-width="1.2"/>
+<text x="890.0" y="69" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">旅中階段（During-trip）：旅遊體驗</text>
+<rect x="1130" y="40" width="640" height="44" fill="#eee" stroke="#000" stroke-width="1.2"/>
+<text x="1450.0" y="69" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">旅後階段（Post-trip）：記憶延伸與持續消費</text>
+<line x1="40" y1="110" x2="1770" y2="110" stroke="#000" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="1770" y="136" font-size="16" font-weight="normal" font-style="italic" text-anchor="end">旅遊歷程（Tourist Journey）</text>
+<rect x="40" y="350" width="230" height="300" fill="#fff" stroke="#000" stroke-width="1.6" stroke-dasharray="8,5"/>
+<text x="155.0" y="388" font-size="22" font-weight="bold" font-style="normal" text-anchor="middle">數位接觸管道</text>
+<text x="155.0" y="414" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">(Digital Touchpoints)</text>
+<text x="155.0" y="465" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">網路資訊</text>
+<text x="155.0" y="487" font-size="15" font-weight="normal" font-style="italic" text-anchor="middle">Online Information</text>
+<text x="155.0" y="527" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">社群媒體</text>
+<text x="155.0" y="549" font-size="15" font-weight="normal" font-style="italic" text-anchor="middle">Social Media</text>
+<text x="155.0" y="589" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">電商平台</text>
+<text x="155.0" y="611" font-size="15" font-weight="normal" font-style="italic" text-anchor="middle">E-commerce Platforms</text>
+<rect x="340" y="170" width="300" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="490.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">食品紀念品刺激</text>
+<text x="490.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Stimulus (S)</text>
+<rect x="370" y="298.4" width="240" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="490.0" y="340.4" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">吸引力</text>
+<text x="490.0" y="366.4" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Attractiveness</text>
+<rect x="370" y="428.8" width="240" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="490.0" y="470.8" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方特色</text>
+<text x="490.0" y="496.8" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Local Uniqueness</text>
+<rect x="370" y="559.2" width="240" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="490.0" y="601.2" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">文化故事</text>
+<text x="490.0" y="627.2" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Cultural Story</text>
+<rect x="370" y="689.6" width="240" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="490.0" y="731.6" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">品牌形象</text>
+<text x="490.0" y="757.6" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Brand Image</text>
+<rect x="740" y="170" width="320" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="900.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">旅客心理歷程</text>
+<text x="900.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Organism (O)</text>
+<rect x="770" y="331.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="900.0" y="373.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">真實性感知</text>
+<text x="900.0" y="399.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Perceived Authenticity</text>
+<rect x="770" y="494.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="900.0" y="536.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方興趣</text>
+<text x="900.0" y="562.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Place Interest</text>
+<rect x="770" y="657.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="900.0" y="699.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方依附</text>
+<text x="900.0" y="725.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Place Attachment</text>
+<line x1="900.0" y1="423.0" x2="900.0" y2="492.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="900.0" y1="586.0" x2="900.0" y2="655.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1140" y="170" width="320" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1300.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">旅客後續行為</text>
+<text x="1300.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Response (R)</text>
+<rect x="1170" y="331.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1300.0" y="373.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">分享與推薦</text>
+<text x="1300.0" y="399.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Sharing &amp; Recommendation</text>
+<rect x="1170" y="494.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1300.0" y="536.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">線上回購</text>
+<text x="1300.0" y="562.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Online Repurchase</text>
+<rect x="1170" y="657.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1300.0" y="699.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再訪意圖</text>
+<text x="1300.0" y="725.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Revisit Intention</text>
+<line x1="1300.0" y1="423.0" x2="1300.0" y2="492.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="1300.0" y1="586.0" x2="1300.0" y2="655.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1540" y="350" width="230" height="300" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1655.0" y="388" font-size="22" font-weight="bold" font-style="normal" text-anchor="middle">後續旅遊行為</text>
+<text x="1655.0" y="416" font-size="22" font-weight="bold" font-style="normal" text-anchor="middle">與地方發展</text>
+<text x="1655.0" y="442" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">(Outcomes)</text>
+<text x="1655.0" y="490" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">再次造訪</text>
+<text x="1655.0" y="530" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">多次購買</text>
+<text x="1655.0" y="570" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">品牌忠誠</text>
+<text x="1655.0" y="610" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">地方支持</text>
+<line x1="270" y1="500.0" x2="338" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="305.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H1</text>
+<line x1="640" y1="500.0" x2="738" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="690.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H2</text>
+<line x1="1060" y1="500.0" x2="1138" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="1100.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H3</text>
+<line x1="1460" y1="500.0" x2="1538" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="1500.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H4</text>
+<path d="M490.0,170 L490.0,140 L1300.0,140 L1300.0,168" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="3,4" marker-end="url(#ah)"/>
+<rect x="750.0" y="126" width="300" height="28" fill="#fff"/>
+<text x="900.0" y="147" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">H5：直接效果（Direct Effect）</text>
+<path d="M1300.0,830 L1300.0,900 L490.0,900 L490.0,832" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>
+<text x="900.0" y="886" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果：到訪金門、體驗地方文化、現地購買（Visit, Cultural Experience, On-site Purchase）</text>
+<line x1="1250" y1="945" x2="1300" y2="945" stroke="#000" stroke-width="2"/>
+<text x="1310" y="951" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接影響關係</text>
+<line x1="1450" y1="945" x2="1500" y2="945" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
+<text x="1510" y="951" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">間接影響或循環關係</text>
+<text x="900.0" y="1000" font-size="26" font-weight="bold" font-style="normal" text-anchor="middle">圖 3-1　研究架構圖</text>
+<text x="900.0" y="1036" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）</text>
+</svg>
