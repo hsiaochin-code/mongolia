@@ -1,0 +1,1018 @@
+{
+ "checked_at": "2026-11-01 21:21:52 +08:00",
+ "range": [
+  "2027-01-25",
+  "2027-01-30"
+ ],
+ "results": [
+  {
+   "inn": "仙峡の宿 銀山荘",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/ginzanso/0/plan/availability/daily"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/ginzanso/0/plan/availability/daily"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/ginzanso/0/plan/availability/daily"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/ginzanso/0/plan/availability/daily"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/ginzanso/0/plan/availability/daily"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/ginzanso/0/plan/availability/daily"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/ginzanso/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/ginzanso/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/ginzanso/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/ginzanso/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/ginzanso/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "仙峡の宿 銀山荘（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/ginzanso/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "古勢起屋 別館",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekiya/0/plan/availability/daily"
+  },
+  {
+   "inn": "古勢起屋 別館",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekiya/0/plan/availability/daily"
+  },
+  {
+   "inn": "古勢起屋 別館",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekiya/0/plan/availability/daily"
+  },
+  {
+   "inn": "古勢起屋 別館",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekiya/0/plan/availability/daily"
+  },
+  {
+   "inn": "古勢起屋 別館",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekiya/0/plan/availability/daily"
+  },
+  {
+   "inn": "古勢起屋 別館",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekiya/0/plan/availability/daily"
+  },
+  {
+   "inn": "古勢起屋 別館（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekiya/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "古勢起屋 別館（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekiya/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "古勢起屋 別館（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekiya/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "古勢起屋 別館（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekiya/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "古勢起屋 別館（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekiya/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "古勢起屋 別館（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekiya/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "古山閣（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kozankaku/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "古山閣（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kozankaku/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "古山閣（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kozankaku/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "古山閣（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kozankaku/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "古山閣（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kozankaku/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "古山閣（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kozankaku/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "古山閣（含クラノバ新館）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "6 方案: 21=×, 22=×, 23=×, 24=×, 25=×, 27=×",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=0046353751453"
+  },
+  {
+   "inn": "古山閣（含クラノバ新館）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "6 方案: 21=×, 22=×, 23=×, 24=×, 25=×, 27=×",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=0046353751453"
+  },
+  {
+   "inn": "古山閣（含クラノバ新館）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "6 方案: 21=×, 22=×, 23=×, 24=×, 25=×, 27=×",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=0046353751453"
+  },
+  {
+   "inn": "古山閣（含クラノバ新館）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "6 方案: 21=×, 22=×, 23=×, 24=×, 25=×, 27=×",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=0046353751453"
+  },
+  {
+   "inn": "古山閣（含クラノバ新館）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "6 方案: 21=×, 22=×, 23=×, 24=×, 25=×, 27=×",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=0046353751453"
+  },
+  {
+   "inn": "古山閣（含クラノバ新館）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "6 方案: 21=×, 22=--, 23=×, 24=×, 25=×, 27=×",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=0046353751453"
+  },
+  {
+   "inn": "味とまごころの宿 昭和館",
+   "night": "2027-01-25",
+   "status": "not_open",
+   "detail": "isAcceptDate=false（網上尚未開放）；電話 0237-28-2151",
+   "url": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-db690034-b45f-46b5-84d1-3f8ba4b8f522/search"
+  },
+  {
+   "inn": "味とまごころの宿 昭和館",
+   "night": "2027-01-26",
+   "status": "not_open",
+   "detail": "isAcceptDate=false（網上尚未開放）；電話 0237-28-2151",
+   "url": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-db690034-b45f-46b5-84d1-3f8ba4b8f522/search"
+  },
+  {
+   "inn": "味とまごころの宿 昭和館",
+   "night": "2027-01-27",
+   "status": "not_open",
+   "detail": "isAcceptDate=false（網上尚未開放）；電話 0237-28-2151",
+   "url": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-db690034-b45f-46b5-84d1-3f8ba4b8f522/search"
+  },
+  {
+   "inn": "味とまごころの宿 昭和館",
+   "night": "2027-01-28",
+   "status": "not_open",
+   "detail": "isAcceptDate=false（網上尚未開放）；電話 0237-28-2151",
+   "url": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-db690034-b45f-46b5-84d1-3f8ba4b8f522/search"
+  },
+  {
+   "inn": "味とまごころの宿 昭和館",
+   "night": "2027-01-29",
+   "status": "not_open",
+   "detail": "isAcceptDate=false（網上尚未開放）；電話 0237-28-2151",
+   "url": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-db690034-b45f-46b5-84d1-3f8ba4b8f522/search"
+  },
+  {
+   "inn": "味とまごころの宿 昭和館",
+   "night": "2027-01-30",
+   "status": "not_open",
+   "detail": "isAcceptDate=false（網上尚未開放）；電話 0237-28-2151",
+   "url": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-db690034-b45f-46b5-84d1-3f8ba4b8f522/search"
+  },
+  {
+   "inn": "御宿 やなだ屋",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/yanadaya/0/plan/availability/daily"
+  },
+  {
+   "inn": "御宿 やなだ屋",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/yanadaya/0/plan/availability/daily"
+  },
+  {
+   "inn": "御宿 やなだ屋",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/yanadaya/0/plan/availability/daily"
+  },
+  {
+   "inn": "御宿 やなだ屋",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/yanadaya/0/plan/availability/daily"
+  },
+  {
+   "inn": "御宿 やなだ屋",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/yanadaya/0/plan/availability/daily"
+  },
+  {
+   "inn": "御宿 やなだ屋",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/yanadaya/0/plan/availability/daily"
+  },
+  {
+   "inn": "御宿 やなだ屋（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/yanadaya/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "御宿 やなだ屋（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/yanadaya/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "御宿 やなだ屋（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/yanadaya/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "御宿 やなだ屋（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/yanadaya/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "御宿 やなだ屋（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/yanadaya/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "御宿 やなだ屋（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/yanadaya/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "旅籠 いとうや",
+   "night": "2027-01-25",
+   "status": "not_open",
+   "detail": "所有方案「-」部屋提供なし",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=4116550506152"
+  },
+  {
+   "inn": "旅籠 いとうや",
+   "night": "2027-01-26",
+   "status": "not_open",
+   "detail": "所有方案「-」部屋提供なし",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=4116550506152"
+  },
+  {
+   "inn": "旅籠 いとうや",
+   "night": "2027-01-27",
+   "status": "not_open",
+   "detail": "所有方案「-」部屋提供なし",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=4116550506152"
+  },
+  {
+   "inn": "旅籠 いとうや",
+   "night": "2027-01-28",
+   "status": "not_open",
+   "detail": "所有方案「-」部屋提供なし",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=4116550506152"
+  },
+  {
+   "inn": "旅籠 いとうや",
+   "night": "2027-01-29",
+   "status": "not_open",
+   "detail": "所有方案「-」部屋提供なし",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=4116550506152"
+  },
+  {
+   "inn": "旅籠 いとうや",
+   "night": "2027-01-30",
+   "status": "not_open",
+   "detail": "所有方案「-」部屋提供なし",
+   "url": "https://www.yado-sagashi.net/yoyaku/plan/index2.jsp?beg&all&yid=4116550506152"
+  },
+  {
+   "inn": "旅籠 いとうや（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/itouya/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "旅籠 いとうや（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/itouya/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "旅籠 いとうや（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/itouya/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "旅籠 いとうや（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/itouya/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "旅籠 いとうや（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/itouya/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "旅籠 いとうや（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/itouya/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "旅館 松本",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "12 個房型×方案皆「－残室なし」（只接受網路預約）",
+   "url": "https://matsumoto.rwiths.net/r-withs/tfs0010a.do"
+  },
+  {
+   "inn": "旅館 松本",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "12 個房型×方案皆「－残室なし」（只接受網路預約）",
+   "url": "https://matsumoto.rwiths.net/r-withs/tfs0010a.do"
+  },
+  {
+   "inn": "旅館 松本",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "12 個房型×方案皆「－残室なし」（只接受網路預約）",
+   "url": "https://matsumoto.rwiths.net/r-withs/tfs0010a.do"
+  },
+  {
+   "inn": "旅館 松本",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "12 個房型×方案皆「－残室なし」（只接受網路預約）",
+   "url": "https://matsumoto.rwiths.net/r-withs/tfs0010a.do"
+  },
+  {
+   "inn": "旅館 松本",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "12 個房型×方案皆「－残室なし」（只接受網路預約）",
+   "url": "https://matsumoto.rwiths.net/r-withs/tfs0010a.do"
+  },
+  {
+   "inn": "旅館 松本",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "12 個房型×方案皆「－残室なし」（只接受網路預約）",
+   "url": "https://matsumoto.rwiths.net/r-withs/tfs0010a.do"
+  },
+  {
+   "inn": "旅館 松本（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/matsumoto/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "旅館 松本（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/matsumoto/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "旅館 松本（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/matsumoto/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "旅館 松本（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/matsumoto/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "旅館 松本（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/matsumoto/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "旅館 松本（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/matsumoto/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "旅館 永澤平八",
+   "night": "2027-01-25",
+   "status": "not_open",
+   "detail": "hpdsp 方案日曆: 00608752=空白(未販售), 01286956=空白(未販售)；官網：3か月前の1日から電話受付 0237-28-2137",
+   "url": "https://www.hpdsp.net/heihachi/hw/hwp3100/hww3101.do?yadNo=319755"
+  },
+  {
+   "inn": "旅館 永澤平八",
+   "night": "2027-01-26",
+   "status": "not_open",
+   "detail": "hpdsp 方案日曆: 00608752=空白(未販售), 01286956=空白(未販售)；官網：3か月前の1日から電話受付 0237-28-2137",
+   "url": "https://www.hpdsp.net/heihachi/hw/hwp3100/hww3101.do?yadNo=319755"
+  },
+  {
+   "inn": "旅館 永澤平八",
+   "night": "2027-01-27",
+   "status": "not_open",
+   "detail": "hpdsp 方案日曆: 00608752=空白(未販售), 01286956=空白(未販售)；官網：3か月前の1日から電話受付 0237-28-2137",
+   "url": "https://www.hpdsp.net/heihachi/hw/hwp3100/hww3101.do?yadNo=319755"
+  },
+  {
+   "inn": "旅館 永澤平八",
+   "night": "2027-01-28",
+   "status": "not_open",
+   "detail": "hpdsp 方案日曆: 00608752=空白(未販售), 01286956=空白(未販售)；官網：3か月前の1日から電話受付 0237-28-2137",
+   "url": "https://www.hpdsp.net/heihachi/hw/hwp3100/hww3101.do?yadNo=319755"
+  },
+  {
+   "inn": "旅館 永澤平八",
+   "night": "2027-01-29",
+   "status": "not_open",
+   "detail": "hpdsp 方案日曆: 00608752=空白(未販售), 01286956=空白(未販售)；官網：3か月前の1日から電話受付 0237-28-2137",
+   "url": "https://www.hpdsp.net/heihachi/hw/hwp3100/hww3101.do?yadNo=319755"
+  },
+  {
+   "inn": "旅館 永澤平八",
+   "night": "2027-01-30",
+   "status": "not_open",
+   "detail": "hpdsp 方案日曆: 00608752=空白(未販售), 01286956=空白(未販售)；官網：3か月前の1日から電話受付 0237-28-2137",
+   "url": "https://www.hpdsp.net/heihachi/hw/hwp3100/hww3101.do?yadNo=319755"
+  },
+  {
+   "inn": "旅館 永澤平八（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/nagasawa/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "旅館 永澤平八（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/nagasawa/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "旅館 永澤平八（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/nagasawa/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "旅館 永澤平八（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/nagasawa/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "旅館 永澤平八（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/nagasawa/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "旅館 永澤平八（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/nagasawa/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "昭和館（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/showakan/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "昭和館（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/showakan/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "昭和館（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/showakan/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "昭和館（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/showakan/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "昭和館（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/showakan/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "昭和館（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/showakan/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "本館 古勢起屋",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "本館 古勢起屋",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "本館 古勢起屋",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "本館 古勢起屋",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "本館 古勢起屋",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "本館 古勢起屋",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/kosekikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "本館 古勢起屋（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekikan/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "本館 古勢起屋（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekikan/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "本館 古勢起屋（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekikan/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "本館 古勢起屋（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekikan/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "本館 古勢起屋（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekikan/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "本館 古勢起屋（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/kosekikan/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/takimikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/takimikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/takimikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/takimikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/takimikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/takimikan/0/plan/availability/daily"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/takimikan/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/takimikan/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/takimikan/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/takimikan/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/takimikan/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "滝と蕎麦の宿 瀧見舘（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/takimikan/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "能登屋旅館",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/notoyaryokan/0/plan/availability/daily"
+  },
+  {
+   "inn": "能登屋旅館",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/notoyaryokan/0/plan/availability/daily"
+  },
+  {
+   "inn": "能登屋旅館",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/notoyaryokan/0/plan/availability/daily"
+  },
+  {
+   "inn": "能登屋旅館",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/notoyaryokan/0/plan/availability/daily"
+  },
+  {
+   "inn": "能登屋旅館",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/notoyaryokan/0/plan/availability/daily"
+  },
+  {
+   "inn": "能登屋旅館",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "489pro 日曆: ×満室",
+   "url": "https://reserve.489ban.net/client/notoyaryokan/0/plan/availability/daily"
+  },
+  {
+   "inn": "能登屋旅館（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/notoya/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "能登屋旅館（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/notoya/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "能登屋旅館（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/notoya/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "能登屋旅館（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/notoya/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "能登屋旅館（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/notoya/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "能登屋旅館（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/notoya/plan.aspx?TDT=20270130&NZ=2"
+  },
+  {
+   "inn": "藤屋",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "tabichat: 該日無可訂方案",
+   "url": "https://tabichat.jp/engine/hotels/fujiyaginzan"
+  },
+  {
+   "inn": "藤屋",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "tabichat: 該日無可訂方案",
+   "url": "https://tabichat.jp/engine/hotels/fujiyaginzan"
+  },
+  {
+   "inn": "藤屋",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "tabichat: 該日無可訂方案",
+   "url": "https://tabichat.jp/engine/hotels/fujiyaginzan"
+  },
+  {
+   "inn": "藤屋",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "tabichat: 該日無可訂方案",
+   "url": "https://tabichat.jp/engine/hotels/fujiyaginzan"
+  },
+  {
+   "inn": "藤屋",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "tabichat: 該日無可訂方案",
+   "url": "https://tabichat.jp/engine/hotels/fujiyaginzan"
+  },
+  {
+   "inn": "藤屋",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "tabichat: 該日無可訂方案",
+   "url": "https://tabichat.jp/engine/hotels/fujiyaginzan"
+  },
+  {
+   "inn": "藤屋（nj-yoyaku）",
+   "night": "2027-01-25",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/fujiya/plan.aspx?TDT=20270125&NZ=2"
+  },
+  {
+   "inn": "藤屋（nj-yoyaku）",
+   "night": "2027-01-26",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/fujiya/plan.aspx?TDT=20270126&NZ=2"
+  },
+  {
+   "inn": "藤屋（nj-yoyaku）",
+   "night": "2027-01-27",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/fujiya/plan.aspx?TDT=20270127&NZ=2"
+  },
+  {
+   "inn": "藤屋（nj-yoyaku）",
+   "night": "2027-01-28",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/fujiya/plan.aspx?TDT=20270128&NZ=2"
+  },
+  {
+   "inn": "藤屋（nj-yoyaku）",
+   "night": "2027-01-29",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/fujiya/plan.aspx?TDT=20270129&NZ=2"
+  },
+  {
+   "inn": "藤屋（nj-yoyaku）",
+   "night": "2027-01-30",
+   "status": "full",
+   "detail": "nj-yoyaku 月曆: ×",
+   "url": "https://www.nj-yoyaku.net/fujiya/plan.aspx?TDT=20270130&NZ=2"
+  }
+ ],
+ "hits": []
+}

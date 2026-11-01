@@ -1,0 +1,122 @@
+[
+ {
+  "key": "sensoji_night",
+  "file": "sensoji_night.jpg",
+  "width": 1600,
+  "height": 1064,
+  "orientation": "landscape",
+  "place": "東京 淺草寺",
+  "subject": "夜間點燈的五重塔與寶藏門、大燈籠（2016年3月，無雪）",
+  "author": "DimiTalen",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Five-storied_pagoda_and_Sens%C5%8D-ji_H%C5%8Dz%C5%8Dmon_at_night,_Asakusa,_Tokyo,_2016.jpg"
+ },
+ {
+  "key": "zuiganji_hondo",
+  "file": "zuiganji_hondo.jpg",
+  "width": 1600,
+  "height": 1067,
+  "orientation": "landscape",
+  "place": "松島 瑞巌寺",
+  "subject": "瑞巌寺本堂（國寶）與白砂庭，晴天（2025年6月，非冬景）",
+  "author": "掬茶",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Zuigan-ji_Hondo_202506.jpg"
+ },
+ {
+  "key": "sendai_gyutan",
+  "file": "sendai_gyutan.jpg",
+  "width": 1280,
+  "height": 961,
+  "orientation": "landscape",
+  "place": "仙台 牛舌",
+  "subject": "仙台名物炭烤牛舌定食：牛舌、麥飯、牛尾湯（2022年3月，仙台站西口店家）",
+  "author": "くろふね",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%E7%89%9B%E3%82%BF%E3%83%B3%E5%AE%9A%E9%A3%9F%EF%BC%88%E7%89%9B%E3%82%BF%E3%83%B3%E7%84%BC%E5%B0%82%E9%96%80%E5%BA%97%E5%8F%B8%E8%A5%BF%E5%8F%A3%E5%90%8D%E6%8E%9B%E4%B8%81%E5%BA%97%E3%83%BB%E4%BB%99%E5%8F%B0%EF%BC%8920220312-P1330639.jpg"
+ },
+ {
+  "key": "magoroku_bath_winter",
+  "file": "magoroku_bath_winter.jpg",
+  "width": 1600,
+  "height": 1200,
+  "orientation": "landscape",
+  "place": "乳頭溫泉鄉 孫六溫泉",
+  "subject": "冬季：大雪覆蓋的孫六溫泉露天岩風呂，降雪中（2015年2月）",
+  "author": "Bjckashiwa",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Magoroku_Onsen_Outdoor_Bath_Winter.jpg"
+ },
+ {
+  "key": "magoroku_winter",
+  "file": "magoroku_winter.jpg",
+  "width": 1600,
+  "height": 1071,
+  "orientation": "landscape",
+  "place": "乳頭溫泉鄉 孫六溫泉",
+  "subject": "冬季：「秘湯 孫六温泉」木柱招牌與積雪木造湯屋（2007年12月）",
+  "author": "Fumiaki Yoshimatsu from Tokyo, Japan",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Magoroku_Onsen_01.jpg"
+ },
+ {
+  "key": "namahage_museum",
+  "file": "namahage_museum.jpg",
+  "width": 1600,
+  "height": 1200,
+  "orientation": "landscape",
+  "place": "男鹿 なまはげ館",
+  "subject": "なまはげ館石牆入口與館名招牌（2014年8月，夏季無雪）",
+  "author": "Kumpei Shiraishi",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Entrance_of_Namahage_Museum,_Oga,_Akita.JPG"
+ },
+ {
+  "key": "namahage_masks",
+  "file": "namahage_masks.jpg",
+  "width": 1600,
+  "height": 1200,
+  "orientation": "landscape",
+  "place": "男鹿 なまはげ館",
+  "subject": "館內展示：各地區稻草裝束與面具的生剝鬼並排（2017年3月）",
+  "author": "ウィキ太郎 Wiki Taro",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Namahage_the_Japanese_demonlike_being_01.jpg"
+ },
+ {
+  "key": "nyudozaki_lighthouse",
+  "file": "nyudozaki_lighthouse.jpg",
+  "width": 1600,
+  "height": 900,
+  "orientation": "landscape",
+  "place": "男鹿 入道崎",
+  "subject": "入道崎黑白條紋燈塔與草原，晴天（2021年6月，非冬景）",
+  "author": "掬茶",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Nyudozaki_Lighthouse_20210618b.jpg"
+ },
+ {
+  "key": "shinzan_shrine",
+  "file": "shinzan_shrine.jpg",
+  "width": 1600,
+  "height": 1200,
+  "orientation": "landscape",
+  "place": "男鹿 真山神社",
+  "subject": "真山神社社殿與杉林，初冬晴天（2014年11月，無雪）",
+  "author": "らんで",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sinzanzinzya_Syaden.JPG"
+ },
+ {
+  "key": "kyukamura_nyuto_view",
+  "file": "kyukamura_nyuto_view.jpg",
+  "width": 1600,
+  "height": 1067,
+  "orientation": "landscape",
+  "place": "乳頭溫泉鄉 休暇村乳頭温泉郷",
+  "subject": "冬季：從休暇村客房望出去的雪中山毛櫸林，傍晚晴天（2011年2月）",
+  "author": "SpringField1967",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%E4%BC%91%E6%9A%87%E6%9D%91%E4%B9%B3%E9%A0%AD%E6%B8%A9%E6%B3%89%E9%83%B7-%E9%83%A8%E5%B1%8B%E3%81%8B%E3%82%89%E3%81%AE%E6%99%AF%E8%89%B2_-_panoramio.jpg"
+ }
+]

@@ -1,0 +1,13 @@
+2026-11-01 13:32:32 +08:00 | 2027-01-25~2027-01-30 | available=0 full=108 not_open=18 error=18 | 25s | hits: 無
+2026-11-01 13:34:03 +08:00 | 2027-01-25~2027-01-30 | available=0 full=120 not_open=18 error=6 | 66s | hits: 無
+2026-11-01 13:35:15 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 25s | hits: 無
+2026-11-01 13:36:48 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 24s | hits: 無
+2026-11-01 13:37:37 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 25s | hits: 無
+2026-11-01 14:18:53 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 27s | hits: 無
+2026-11-01 15:19:32 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 30s | hits: 無
+2026-11-01 16:19:02 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 27s | hits: 無
+2026-11-01 17:19:37 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 27s | hits: 無
+2026-11-01 18:19:38 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 28s | hits: 無
+2026-11-01 19:19:27 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 29s | hits: 無
+2026-11-01 20:21:29 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 27s | hits: 無
+2026-11-01 21:21:52 +08:00 | 2027-01-25~2027-01-30 | available=0 full=126 not_open=18 error=0 | 27s | hits: 無
