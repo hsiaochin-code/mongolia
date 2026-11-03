@@ -320,6 +320,19 @@ def main():
                 results.append(R('（某項檢查）', '-', 'error', f'逾時或失敗: {e}', ''))
     results.sort(key=lambda r: (r['inn'], r['night']))
     hits = [r for r in results if r['status'] == 'available']
+    for h in hits:  # 直接訂房連結（帶入日期）
+        u, n = h.get('url', ''), h.get('night', '')
+        try:
+            d = dt.date.fromisoformat(n)
+        except Exception:
+            d = None
+        bu = u
+        m = re.search(r'reserve\.489ban\.net/client/([^/]+)/', u) if d else None
+        if m:
+            bu = f"https://reserve.489ban.net/client/{m.group(1)}/0/plan/search?date={d:%Y}%2F{d:%m}%2F{d:%d}&roomCount=1"
+        elif d and 'nj-yoyaku.net' in u:
+            bu = re.sub(r'plan\.aspx.*$', f'plan.aspx?TDT={d:%Y%m%d}&NZ=2', u)
+        h['book_url'] = bu
     now = dt.datetime.now(TW).strftime('%Y-%m-%d %H:%M:%S +08:00')
     with open(OUT_JSON, 'w', encoding='utf-8') as f:
         json.dump({'checked_at': now, 'range': [FROM, TO], 'results': results, 'hits': hits}, f, ensure_ascii=False, indent=1)
