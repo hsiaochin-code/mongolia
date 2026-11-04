@@ -33,15 +33,16 @@ a('<defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" o
 a(f'<rect width="{W}" height="{H}" fill="#fff"/>')
 
 # 旅遊歷程階段（頂部時間軸）
-TOP = 40
-stages = [(40, 640, "旅前階段（Pre-trip）：旅遊誘因"),
-          (720, 1060, "旅中階段（During-trip）：旅遊體驗"),
-          (1130, 1770, "旅後階段（Post-trip）：記憶延伸與持續消費")]
-for x1, x2, s in stages:
-    a(f'<rect x="{x1}" y="{TOP}" width="{x2-x1}" height="44" fill="#eee" stroke="#000" stroke-width="1.2"/>')
-    text((x1 + x2) / 2, TOP + 29, s, 20, "bold")
-arrow(40, TOP + 70, 1770, TOP + 70, sw=1.5)
-text(1770, TOP + 96, "旅遊歷程（Tourist Journey）", 16, anchor="end", style="italic")
+TOP = 30
+stages = [(40, 776, "旅前階段（Pre-trip）", "旅遊誘因"),
+          (900, 1304, "旅中階段（During-trip）", "旅遊體驗"),
+          (1400, 1770, "旅後階段（Post-trip）", "記憶延伸與持續消費")]
+for x1, x2, s, sub in stages:
+    a(f'<rect x="{x1}" y="{TOP}" width="{x2-x1}" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>')
+    text((x1 + x2) / 2, TOP + 25, s, 19, "bold")
+    text((x1 + x2) / 2, TOP + 49, sub, 17)
+text(40, TOP + 89, "旅遊歷程（Tourist Journey）", 16, anchor="start", style="italic")
+arrow(260, TOP + 84, 1770, TOP + 84, sw=1.5)
 
 Y0, Y1 = 170, 830  # 構面框上下界
 
@@ -61,49 +62,39 @@ def construct(x, w, zh, en, items, role, pad=30):
     return pos
 
 # 前置變數：數位接觸管道
-cx, cw = 40, 240
+cx, cw = 40, 260
 construct(cx, cw, "數位接觸管道", "Digital Touchpoints",
           [("網路資訊", "Online Information"), ("社群媒體", "Social Media"),
            ("電商平台", "E-commerce Platforms")], "前置變數", pad=18)
 # S
-sx, sw_ = 340, 300
+sx, sw_ = 456, 320
 construct(sx, sw_, "食品紀念品刺激", "Stimulus (S)",
           [("吸引力", "Attractiveness"), ("地方特色", "Local Uniqueness"),
            ("文化故事", "Cultural Story"), ("品牌形象", "Brand Image")], "自變數")
 # O
-ox, ow = 740, 320
+ox, ow = 932, 340
 op = construct(ox, ow, "旅客心理歷程", "Organism (O)",
                [("真實性感知", "Perceived Authenticity"), ("地方興趣", "Place Interest"),
                 ("地方依附", "Place Attachment")], "中介變數")
 for (t, b), (t2, _) in zip(op, op[1:]):
     arrow(ox + ow / 2, b, ox + ow / 2, t2 - 2)
 # R
-rx, rw = 1140, 320
+rx, rw = 1430, 340
 rp = construct(rx, rw, "旅客後續行為", "Response (R)",
                [("分享與推薦", "Sharing &amp; Recommendation"), ("線上與多次回購", "Online &amp; Repeat Purchase"),
                 ("再次造訪意圖", "Revisit Intention")], "依變數")
 for (t, b), (t2, _) in zip(rp, rp[1:]):
     arrow(rx + rw / 2, b, rx + rw / 2, t2 - 2)
 
-# 結果：地方發展成果（再次造訪、多次購買已整合至旅後 R 構面）
-fx, fw = 1540, 230
-box(fx, 380, fw, 240, sw=2)
-text(fx + fw / 2, 425, "地方發展成果", 22, "bold")
-text(fx + fw / 2, 452, "(Outcomes)", 16, style="italic")
-text(fx + fw / 2, 478, "〔結果變數〕", 17)
-for i, s in enumerate(["品牌忠誠", "地方支持"]):
-    text(fx + fw / 2, 530 + i * 44, s, 20)
-
 mid = (Y0 + Y1) / 2
 arrow(cx + cw, mid, sx - 2, mid); hyp((cx + cw + sx) / 2, mid - 14, "H1")
 arrow(sx + sw_, mid, ox - 2, mid); hyp((sx + sw_ + ox) / 2, mid - 14, "H2")
 arrow(ox + ow, mid, rx - 2, mid); hyp((ox + ow + rx) / 2, mid - 14, "H3")
-arrow(rx + rw, mid, fx - 2, mid); hyp((rx + rw + fx) / 2, mid - 14, "H4")
 # 直接效果（S → R，檢驗中介）
 a(f'<path d="M{sx + sw_ / 2},{Y0} L{sx + sw_ / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 2}" '
   'fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="3,4" marker-end="url(#ah)"/>')
 a(f'<rect x="{(sx+rx+rw)/2 - 150}" y="{Y0 - 44}" width="300" height="28" fill="#fff"/>')
-text((sx + rx + rw) / 2, Y0 - 23, "H5：直接效果（Direct Effect）", 18, style="italic")
+text((sx + rx + rw) / 2, Y0 - 23, "H4：直接效果（Direct Effect）", 18, style="italic")
 
 # 回饋（循環）路徑
 FB = 900
@@ -113,7 +104,7 @@ text((sx + rx + rw) / 2, FB - 14,
      "回饋效果：到訪金門、體驗地方文化、現地購買（Visit, Cultural Experience, On-site Purchase）", 18)
 
 # 圖例
-lx, ly = 1250, 945
+lx, ly = 1340, 945
 a(f'<line x1="{lx}" y1="{ly}" x2="{lx+50}" y2="{ly}" stroke="#000" stroke-width="2"/>')
 text(lx + 60, ly + 6, "直接影響關係", 16, anchor="start")
 a(f'<line x1="{lx+200}" y1="{ly}" x2="{lx+250}" y2="{ly}" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>')
