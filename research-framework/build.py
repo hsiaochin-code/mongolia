@@ -45,48 +45,43 @@ text(1770, TOP + 96, "旅遊歷程（Tourist Journey）", 16, anchor="end", styl
 
 Y0, Y1 = 170, 830  # 構面框上下界
 
-# 數位接觸管道
-cx, cw = 40, 230
-box(cx, 350, cw, 300, dash=True)
-text(cx + cw / 2, 388, "數位接觸管道", 22, "bold")
-text(cx + cw / 2, 414, "(Digital Touchpoints)", 16, style="italic")
-for i, (zh, en) in enumerate([("網路資訊", "Online Information"), ("社群媒體", "Social Media"),
-                               ("電商平台", "E-commerce Platforms")]):
-    yy = 465 + i * 62
-    text(cx + cw / 2, yy, zh, 20)
-    text(cx + cw / 2, yy + 22, en, 15, style="italic")
-
-def construct(x, w, zh, en, items, tag):
+def construct(x, w, zh, en, items, role, pad=30):
     box(x, Y0, w, Y1 - Y0, sw=2)
     text(x + w / 2, Y0 + 38, zh, 23, "bold")
     text(x + w / 2, Y0 + 66, en, 18, style="italic")
+    text(x + w / 2, Y0 + 94, f"〔{role}〕", 17)
     n = len(items)
     ih = 92
-    gap = (Y1 - Y0 - 100 - n * ih) / (n + 1)
+    gap = (Y1 - Y0 - 110 - n * ih) / (n + 1)
     pos = []
     for i, (z, e) in enumerate(items):
-        yy = Y0 + 90 + gap * (i + 1) + ih * i
-        item(x + 30, yy, w - 60, ih, z, e)
+        yy = Y0 + 100 + gap * (i + 1) + ih * i
+        item(x + pad, yy, w - 2 * pad, ih, z, e)
         pos.append((yy, yy + ih))
     return pos
 
+# 前置變數：數位接觸管道
+cx, cw = 40, 240
+construct(cx, cw, "數位接觸管道", "Digital Touchpoints",
+          [("網路資訊", "Online Information"), ("社群媒體", "Social Media"),
+           ("電商平台", "E-commerce Platforms")], "前置變數", pad=18)
 # S
 sx, sw_ = 340, 300
 construct(sx, sw_, "食品紀念品刺激", "Stimulus (S)",
           [("吸引力", "Attractiveness"), ("地方特色", "Local Uniqueness"),
-           ("文化故事", "Cultural Story"), ("品牌形象", "Brand Image")], "S")
+           ("文化故事", "Cultural Story"), ("品牌形象", "Brand Image")], "自變數")
 # O
 ox, ow = 740, 320
 op = construct(ox, ow, "旅客心理歷程", "Organism (O)",
                [("真實性感知", "Perceived Authenticity"), ("地方興趣", "Place Interest"),
-                ("地方依附", "Place Attachment")], "O")
+                ("地方依附", "Place Attachment")], "中介變數")
 for (t, b), (t2, _) in zip(op, op[1:]):
     arrow(ox + ow / 2, b, ox + ow / 2, t2 - 2)
 # R
 rx, rw = 1140, 320
 rp = construct(rx, rw, "旅客後續行為", "Response (R)",
                [("分享與推薦", "Sharing &amp; Recommendation"), ("線上回購", "Online Repurchase"),
-                ("再訪意圖", "Revisit Intention")], "R")
+                ("再訪意圖", "Revisit Intention")], "依變數")
 for (t, b), (t2, _) in zip(rp, rp[1:]):
     arrow(rx + rw / 2, b, rx + rw / 2, t2 - 2)
 
@@ -96,8 +91,9 @@ box(fx, 350, fw, 300, sw=2)
 text(fx + fw / 2, 388, "後續旅遊行為", 22, "bold")
 text(fx + fw / 2, 416, "與地方發展", 22, "bold")
 text(fx + fw / 2, 442, "(Outcomes)", 16, style="italic")
+text(fx + fw / 2, 468, "〔結果變數〕", 17)
 for i, s in enumerate(["再次造訪", "多次購買", "品牌忠誠", "地方支持"]):
-    text(fx + fw / 2, 490 + i * 40, s, 20)
+    text(fx + fw / 2, 508 + i * 38, s, 20)
 
 mid = (Y0 + Y1) / 2
 arrow(cx + cw, mid, sx - 2, mid); hyp((cx + cw + sx) / 2, mid - 14, "H1")
