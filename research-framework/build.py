@@ -80,20 +80,19 @@ for (t, b), (t2, _) in zip(op, op[1:]):
 # R
 rx, rw = 1140, 320
 rp = construct(rx, rw, "旅客後續行為", "Response (R)",
-               [("分享與推薦", "Sharing &amp; Recommendation"), ("線上回購", "Online Repurchase"),
-                ("再訪意圖", "Revisit Intention")], "依變數")
+               [("分享與推薦", "Sharing &amp; Recommendation"), ("線上與多次回購", "Online &amp; Repeat Purchase"),
+                ("再次造訪意圖", "Revisit Intention")], "依變數")
 for (t, b), (t2, _) in zip(rp, rp[1:]):
     arrow(rx + rw / 2, b, rx + rw / 2, t2 - 2)
 
-# 結果：後續旅遊行為與地方發展
+# 結果：地方發展成果（再次造訪、多次購買已整合至旅後 R 構面）
 fx, fw = 1540, 230
-box(fx, 350, fw, 300, sw=2)
-text(fx + fw / 2, 388, "後續旅遊行為", 22, "bold")
-text(fx + fw / 2, 416, "與地方發展", 22, "bold")
-text(fx + fw / 2, 442, "(Outcomes)", 16, style="italic")
-text(fx + fw / 2, 468, "〔結果變數〕", 17)
-for i, s in enumerate(["再次造訪", "多次購買", "品牌忠誠", "地方支持"]):
-    text(fx + fw / 2, 508 + i * 38, s, 20)
+box(fx, 380, fw, 240, sw=2)
+text(fx + fw / 2, 425, "地方發展成果", 22, "bold")
+text(fx + fw / 2, 452, "(Outcomes)", 16, style="italic")
+text(fx + fw / 2, 478, "〔結果變數〕", 17)
+for i, s in enumerate(["品牌忠誠", "地方支持"]):
+    text(fx + fw / 2, 530 + i * 44, s, 20)
 
 mid = (Y0 + Y1) / 2
 arrow(cx + cw, mid, sx - 2, mid); hyp((cx + cw + sx) / 2, mid - 14, "H1")

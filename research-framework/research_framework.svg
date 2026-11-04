@@ -61,22 +61,19 @@
 <text x="1300.0" y="380.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">分享與推薦</text>
 <text x="1300.0" y="406.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Sharing &amp; Recommendation</text>
 <rect x="1170" y="499.0" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1300.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">線上回購</text>
-<text x="1300.0" y="567.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Online Repurchase</text>
+<text x="1300.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">線上與多次回購</text>
+<text x="1300.0" y="567.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Online &amp; Repeat Purchase</text>
 <rect x="1170" y="659.5" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1300.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再訪意圖</text>
+<text x="1300.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再次造訪意圖</text>
 <text x="1300.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Revisit Intention</text>
 <line x1="1300.0" y1="430.5" x2="1300.0" y2="497.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <line x1="1300.0" y1="591.0" x2="1300.0" y2="657.5" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<rect x="1540" y="350" width="230" height="300" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="1655.0" y="388" font-size="22" font-weight="bold" font-style="normal" text-anchor="middle">後續旅遊行為</text>
-<text x="1655.0" y="416" font-size="22" font-weight="bold" font-style="normal" text-anchor="middle">與地方發展</text>
-<text x="1655.0" y="442" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">(Outcomes)</text>
-<text x="1655.0" y="468" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔結果變數〕</text>
-<text x="1655.0" y="508" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">再次造訪</text>
-<text x="1655.0" y="546" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">多次購買</text>
-<text x="1655.0" y="584" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">品牌忠誠</text>
-<text x="1655.0" y="622" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">地方支持</text>
+<rect x="1540" y="380" width="230" height="240" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1655.0" y="425" font-size="22" font-weight="bold" font-style="normal" text-anchor="middle">地方發展成果</text>
+<text x="1655.0" y="452" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">(Outcomes)</text>
+<text x="1655.0" y="478" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔結果變數〕</text>
+<text x="1655.0" y="530" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">品牌忠誠</text>
+<text x="1655.0" y="574" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle">地方支持</text>
 <line x1="280" y1="500.0" x2="338" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="310.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H1</text>
 <line x1="640" y1="500.0" x2="738" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
