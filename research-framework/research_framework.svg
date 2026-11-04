@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1060" viewBox="0 0 1800 1060" font-family="'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150" font-family="'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif">
 <defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 z" fill="#000"/></marker></defs>
-<rect width="1800" height="1060" fill="#fff"/>
+<rect width="1800" height="1150" fill="#fff"/>
 <rect x="40" y="30" width="736" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>
 <text x="408.0" y="55" font-size="19" font-weight="bold" font-style="normal" text-anchor="middle">旅前階段（Pre-trip）</text>
 <text x="408.0" y="79" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">旅遊誘因</text>
@@ -55,37 +55,43 @@
 <text x="1102.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方依附</text>
 <text x="1102.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Place Attachment</text>
 <line x1="1102.0" y1="430.5" x2="1102.0" y2="497.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="1116.0" y="471.75" font-size="20" font-weight="bold" font-style="italic" text-anchor="start">H3</text>
 <line x1="1102.0" y1="591.0" x2="1102.0" y2="657.5" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="1116.0" y="632.25" font-size="20" font-weight="bold" font-style="italic" text-anchor="start">H4</text>
 <rect x="1430" y="170" width="340" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="1600.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">旅客後續行為</text>
-<text x="1600.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Response (R)</text>
+<text x="1600.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">後續行為意圖</text>
+<text x="1600.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Behavioral Intention (R)</text>
 <text x="1600.0" y="264" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔依變數〕</text>
 <rect x="1460" y="338.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1600.0" y="380.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">分享與推薦</text>
-<text x="1600.0" y="406.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Sharing &amp; Recommendation</text>
+<text x="1600.0" y="380.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">推薦意圖</text>
+<text x="1600.0" y="406.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Recommendation Intention</text>
 <rect x="1460" y="499.0" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1600.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">線上與多次回購</text>
+<text x="1600.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">回購意圖</text>
 <text x="1600.0" y="567.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Online &amp; Repeat Purchase</text>
 <rect x="1460" y="659.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1600.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再次造訪意圖</text>
+<text x="1600.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再訪意圖</text>
 <text x="1600.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Revisit Intention</text>
-<line x1="1600.0" y1="430.5" x2="1600.0" y2="497.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<line x1="1600.0" y1="591.0" x2="1600.0" y2="657.5" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <line x1="300" y1="500.0" x2="454" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="378.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H1</text>
-<line x1="776" y1="500.0" x2="930" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="854.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H2</text>
-<line x1="1272" y1="500.0" x2="1428" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="1351.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H3</text>
-<path d="M616.0,170 L616.0,140 L1600.0,140 L1600.0,168" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="3,4" marker-end="url(#ah)"/>
-<rect x="963.0" y="126" width="300" height="28" fill="#fff"/>
-<text x="1113.0" y="147" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">H4：直接效果（Direct Effect）</text>
+<line x1="776" y1="384.5" x2="960" y2="384.5" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="869.0" y="370.5" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H2</text>
+<line x1="1242" y1="384.5" x2="1428" y2="464.75" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="1336.0" y="410.625" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H6</text>
+<line x1="1242" y1="705.5" x2="1428" y2="625.25" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<text x="1336.0" y="651.375" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H5</text>
+<path d="M616.0,170 L616.0,140 L1600.0,140 L1600.0,168" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4" marker-end="url(#ah)"/>
+<rect x="883.0" y="126" width="460" height="28" fill="#fff"/>
+<text x="1113.0" y="147" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">直接效果（中介檢驗用，不列假設）</text>
 <path d="M1600.0,830 L1600.0,900 L616.0,900 L616.0,832" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>
-<text x="1113.0" y="886" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果：到訪金門、體驗地方文化、現地購買（Visit, Cultural Experience, On-site Purchase）</text>
-<line x1="1340" y1="945" x2="1390" y2="945" stroke="#000" stroke-width="2"/>
-<text x="1400" y="951" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接影響關係</text>
-<line x1="1540" y1="945" x2="1590" y2="945" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
-<text x="1600" y="951" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">間接影響或循環關係</text>
-<text x="900.0" y="1000" font-size="26" font-weight="bold" font-style="normal" text-anchor="middle">圖 3-1　研究架構圖</text>
-<text x="900.0" y="1036" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）</text>
+<text x="1113.0" y="886" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買</text>
+<line x1="40" y1="950" x2="90" y2="950" stroke="#000" stroke-width="2"/>
+<text x="100" y="956" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">研究假設路徑</text>
+<line x1="240" y1="950" x2="290" y2="950" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>
+<text x="300" y="956" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接效果（不列假設）</text>
+<line x1="480" y1="950" x2="530" y2="950" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
+<text x="540" y="956" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">循環關係（概念說明）</text>
+<text x="40" y="992" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）</text>
+<text x="40" y="1020" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）</text>
+<text x="900.0" y="1086" font-size="26" font-weight="bold" font-style="normal" text-anchor="middle">圖 3-1　研究架構圖</text>
+<text x="900.0" y="1122" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）</text>
 </svg>

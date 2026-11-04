@@ -2,7 +2,7 @@
 import pathlib
 import subprocess
 
-W, H = 1800, 1060
+W, H = 1800, 1150
 FONT = "'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif"
 out = []
 a = out.append
@@ -71,48 +71,62 @@ sx, sw_ = 456, 320
 construct(sx, sw_, "食品紀念品刺激", "Stimulus (S)",
           [("吸引力", "Attractiveness"), ("地方特色", "Local Uniqueness"),
            ("文化故事", "Cultural Story"), ("品牌形象", "Brand Image")], "自變數")
-# O
+# O：三個中介變數（序列）
 ox, ow = 932, 340
 op = construct(ox, ow, "旅客心理歷程", "Organism (O)",
                [("真實性感知", "Perceived Authenticity"), ("地方興趣", "Place Interest"),
                 ("地方依附", "Place Attachment")], "中介變數")
-for (t, b), (t2, _) in zip(op, op[1:]):
+ix1, ix2 = ox + 30, ox + ow - 30          # O 內方框左右緣
+pa_c = sum(op[0]) / 2                      # 真實性感知中心 y
+patt_c = sum(op[2]) / 2                    # 地方依附中心 y
+for (t, b), (t2, _), h in zip(op, op[1:], ["H3", "H4"]):
     arrow(ox + ow / 2, b, ox + ow / 2, t2 - 2)
-# R
+    hyp(ox + ow / 2 + 14, (b + t2) / 2 + 7, h)
+    out[-1] = out[-1].replace('text-anchor="middle"', 'text-anchor="start"')
+# R：後續行為意圖（單一構面，三個衡量面向）
 rx, rw = 1430, 340
-rp = construct(rx, rw, "旅客後續行為", "Response (R)",
-               [("分享與推薦", "Sharing &amp; Recommendation"), ("線上與多次回購", "Online &amp; Repeat Purchase"),
-                ("再次造訪意圖", "Revisit Intention")], "依變數")
-for (t, b), (t2, _) in zip(rp, rp[1:]):
-    arrow(rx + rw / 2, b, rx + rw / 2, t2 - 2)
+rp = construct(rx, rw, "後續行為意圖", "Behavioral Intention (R)",
+          [("推薦意圖", "Recommendation Intention"), ("回購意圖", "Online &amp; Repeat Purchase"),
+           ("再訪意圖", "Revisit Intention")], "依變數")
 
 mid = (Y0 + Y1) / 2
 arrow(cx + cw, mid, sx - 2, mid); hyp((cx + cw + sx) / 2, mid - 14, "H1")
-arrow(sx + sw_, mid, ox - 2, mid); hyp((sx + sw_ + ox) / 2, mid - 14, "H2")
-arrow(ox + ow, mid, rx - 2, mid); hyp((ox + ow + rx) / 2, mid - 14, "H3")
-# 直接效果（S → R，檢驗中介）
-a(f'<path d="M{sx + sw_ / 2},{Y0} L{sx + sw_ / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 2}" '
-  'fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="3,4" marker-end="url(#ah)"/>')
-a(f'<rect x="{(sx+rx+rw)/2 - 150}" y="{Y0 - 44}" width="300" height="28" fill="#fff"/>')
-text((sx + rx + rw) / 2, Y0 - 23, "H4：直接效果（Direct Effect）", 18, style="italic")
+arrow(sx + sw_, pa_c, ix1 - 2, pa_c); hyp((sx + sw_ + ix1) / 2, pa_c - 14, "H2")
+# H5、H6 指向 R 構面外框（落在面向方框之間），表示作用於整體構面
+r_up = (rp[0][1] + rp[1][0]) / 2
+r_dn = (rp[1][1] + rp[2][0]) / 2
+arrow(ix2, pa_c, rx - 2, r_up); hyp((ix2 + rx) / 2, (pa_c + r_up) / 2 - 14, "H6")
+arrow(ix2, patt_c, rx - 2, r_dn); hyp((ix2 + rx) / 2, (patt_c + r_dn) / 2 - 14, "H5")
 
-# 回饋（循環）路徑
+# 直接效果（S → R，中介檢驗用，不列假設）
+a(f'<path d="M{sx + sw_ / 2},{Y0} L{sx + sw_ / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 2}" '
+  'fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4" marker-end="url(#ah)"/>')
+a(f'<rect x="{(sx+rx+rw)/2 - 230}" y="{Y0 - 44}" width="460" height="28" fill="#fff"/>')
+text((sx + rx + rw) / 2, Y0 - 23, "直接效果（中介檢驗用，不列假設）", 18)
+
+# 回饋（循環）路徑：概念說明，不列入檢驗
 FB = 900
 a(f'<path d="M{rx + rw / 2},{Y1} L{rx + rw / 2},{FB} L{sx + sw_ / 2},{FB} L{sx + sw_ / 2},{Y1 + 2}" '
   'fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>')
 text((sx + rx + rw) / 2, FB - 14,
-     "回饋效果：到訪金門、體驗地方文化、現地購買（Visit, Cultural Experience, On-site Purchase）", 18)
+     "回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買", 18)
 
 # 圖例
-lx, ly = 1340, 945
+lx, ly = 40, 950
 a(f'<line x1="{lx}" y1="{ly}" x2="{lx+50}" y2="{ly}" stroke="#000" stroke-width="2"/>')
-text(lx + 60, ly + 6, "直接影響關係", 16, anchor="start")
-a(f'<line x1="{lx+200}" y1="{ly}" x2="{lx+250}" y2="{ly}" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>')
-text(lx + 260, ly + 6, "間接影響或循環關係", 16, anchor="start")
+text(lx + 60, ly + 6, "研究假設路徑", 16, anchor="start")
+a(f'<line x1="{lx+200}" y1="{ly}" x2="{lx+250}" y2="{ly}" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>')
+text(lx + 260, ly + 6, "直接效果（不列假設）", 16, anchor="start")
+a(f'<line x1="{lx+440}" y1="{ly}" x2="{lx+490}" y2="{ly}" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>')
+text(lx + 500, ly + 6, "循環關係（概念說明）", 16, anchor="start")
+
+# 中介假設註記
+text(40, 992, "註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）", 17, anchor="start")
+text(40, 1020, "　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）", 17, anchor="start")
 
 # 圖名與資料來源（論文格式：圖名置於圖下方）
-text(W / 2, 1000, "圖 3-1　研究架構圖", 26, "bold")
-text(W / 2, 1036, "資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）", 17)
+text(W / 2, 1086, "圖 3-1　研究架構圖", 26, "bold")
+text(W / 2, 1122, "資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）", 17)
 a("</svg>")
 
 here = pathlib.Path(__file__).parent
