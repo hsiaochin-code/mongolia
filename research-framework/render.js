@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 (async () => {
   const svg = fs.readFileSync(path.join(__dirname, 'research_framework.svg'), 'utf8');
-  const [W, H] = [1800, 1150];
+  const [W, H] = [1800, 1210];
   const b = await chromium.launch();
   const pg = await b.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 2 });
   await pg.setContent(`<html><body style="margin:0">${svg}</body></html>`);

@@ -2,7 +2,7 @@
 import pathlib
 import subprocess
 
-W, H = 1800, 1150
+W, H = 1800, 1210
 FONT = "'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif"
 out = []
 a = out.append
@@ -104,15 +104,24 @@ a(f'<path d="M{sx + sw_ / 2},{Y0} L{sx + sw_ / 2},{Y0 - 30} L{rx + rw / 2},{Y0 -
 a(f'<rect x="{(sx+rx+rw)/2 - 230}" y="{Y0 - 44}" width="460" height="28" fill="#fff"/>')
 text((sx + rx + rw) / 2, Y0 - 23, "直接效果（中介檢驗用，不列假設）", 18)
 
+# H7：中介效果以大括號標示於 O 構面下方（不另畫路徑）
+by, bh, br = Y1 + 10, 24, 12
+xm, x1, x2 = ox + ow / 2, ox + 6, ox + ow - 6
+a(f'<path d="M{x1},{by} Q{x1},{by + bh / 2} {x1 + br},{by + bh / 2} L{xm - br},{by + bh / 2} '
+  f'Q{xm},{by + bh / 2} {xm},{by + bh} Q{xm},{by + bh / 2} {xm + br},{by + bh / 2} '
+  f'L{x2 - br},{by + bh / 2} Q{x2},{by + bh / 2} {x2},{by}" fill="none" stroke="#000" stroke-width="1.6"/>')
+hyp(xm, by + bh + 28, "H7a、H7b：中介效果")
+out[-1] = out[-1].replace('font-style="italic"', 'font-style="normal"')
+
 # 回饋（循環）路徑：概念說明，不列入檢驗
-FB = 900
+FB = 960
 a(f'<path d="M{rx + rw / 2},{Y1} L{rx + rw / 2},{FB} L{sx + sw_ / 2},{FB} L{sx + sw_ / 2},{Y1 + 2}" '
   'fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>')
 text((sx + rx + rw) / 2, FB - 14,
      "回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買", 18)
 
 # 圖例
-lx, ly = 40, 950
+lx, ly = 40, 1010
 a(f'<line x1="{lx}" y1="{ly}" x2="{lx+50}" y2="{ly}" stroke="#000" stroke-width="2"/>')
 text(lx + 60, ly + 6, "研究假設路徑", 16, anchor="start")
 a(f'<line x1="{lx+200}" y1="{ly}" x2="{lx+250}" y2="{ly}" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>')
@@ -121,12 +130,12 @@ a(f'<line x1="{lx+440}" y1="{ly}" x2="{lx+490}" y2="{ly}" stroke="#000" stroke-w
 text(lx + 500, ly + 6, "循環關係（概念說明）", 16, anchor="start")
 
 # 中介假設註記
-text(40, 992, "註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）", 17, anchor="start")
-text(40, 1020, "　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）", 17, anchor="start")
+text(40, 1052, "註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）", 17, anchor="start")
+text(40, 1080, "　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）", 17, anchor="start")
 
 # 圖名與資料來源（論文格式：圖名置於圖下方）
-text(W / 2, 1086, "圖 3-1　研究架構圖", 26, "bold")
-text(W / 2, 1122, "資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）", 17)
+text(W / 2, 1146, "圖 3-1　研究架構圖", 26, "bold")
+text(W / 2, 1182, "資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）", 17)
 a("</svg>")
 
 here = pathlib.Path(__file__).parent

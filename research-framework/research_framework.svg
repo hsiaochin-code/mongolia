@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150" font-family="'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1210" viewBox="0 0 1800 1210" font-family="'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif">
 <defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 z" fill="#000"/></marker></defs>
-<rect width="1800" height="1150" fill="#fff"/>
+<rect width="1800" height="1210" fill="#fff"/>
 <rect x="40" y="30" width="736" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>
 <text x="408.0" y="55" font-size="19" font-weight="bold" font-style="normal" text-anchor="middle">旅前階段（Pre-trip）</text>
 <text x="408.0" y="79" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">旅遊誘因</text>
@@ -82,16 +82,18 @@
 <path d="M616.0,170 L616.0,140 L1600.0,140 L1600.0,168" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4" marker-end="url(#ah)"/>
 <rect x="883.0" y="126" width="460" height="28" fill="#fff"/>
 <text x="1113.0" y="147" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">直接效果（中介檢驗用，不列假設）</text>
-<path d="M1600.0,830 L1600.0,900 L616.0,900 L616.0,832" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>
-<text x="1113.0" y="886" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買</text>
-<line x1="40" y1="950" x2="90" y2="950" stroke="#000" stroke-width="2"/>
-<text x="100" y="956" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">研究假設路徑</text>
-<line x1="240" y1="950" x2="290" y2="950" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>
-<text x="300" y="956" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接效果（不列假設）</text>
-<line x1="480" y1="950" x2="530" y2="950" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
-<text x="540" y="956" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">循環關係（概念說明）</text>
-<text x="40" y="992" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）</text>
-<text x="40" y="1020" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）</text>
-<text x="900.0" y="1086" font-size="26" font-weight="bold" font-style="normal" text-anchor="middle">圖 3-1　研究架構圖</text>
-<text x="900.0" y="1122" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）</text>
+<path d="M938,840 Q938,852.0 950,852.0 L1090.0,852.0 Q1102.0,852.0 1102.0,864 Q1102.0,852.0 1114.0,852.0 L1254,852.0 Q1266,852.0 1266,840" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="1102.0" y="892" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">H7a、H7b：中介效果</text>
+<path d="M1600.0,830 L1600.0,960 L616.0,960 L616.0,832" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>
+<text x="1113.0" y="946" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買</text>
+<line x1="40" y1="1010" x2="90" y2="1010" stroke="#000" stroke-width="2"/>
+<text x="100" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">研究假設路徑</text>
+<line x1="240" y1="1010" x2="290" y2="1010" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>
+<text x="300" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接效果（不列假設）</text>
+<line x1="480" y1="1010" x2="530" y2="1010" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
+<text x="540" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">循環關係（概念說明）</text>
+<text x="40" y="1052" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）</text>
+<text x="40" y="1080" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）</text>
+<text x="900.0" y="1146" font-size="26" font-weight="bold" font-style="normal" text-anchor="middle">圖 3-1　研究架構圖</text>
+<text x="900.0" y="1182" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）</text>
 </svg>
