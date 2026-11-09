@@ -3,7 +3,8 @@ import pathlib
 import subprocess
 
 W, H = 1800, 1210
-FONT = "'Times New Roman','Liberation Serif','WenQuanYi Zen Hei',serif"
+# 中文：標楷體（Windows 開啟 SVG 時優先使用；轉檔環境以教育部全字庫正楷體 TW-Kai 替代）；英文：Times New Roman
+FONT = "'Times New Roman','Liberation Serif','DFKai-SB','標楷體','BiauKai','TW-Kai',serif"
 out = []
 a = out.append
 
