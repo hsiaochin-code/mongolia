@@ -1,99 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1210" viewBox="0 0 1800 1210" font-family="'Times New Roman','Liberation Serif','DFKai-SB','標楷體','BiauKai','TW-Kai',serif">
-<defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0,0 L12,5 L0,10 z" fill="#000"/></marker></defs>
-<rect width="1800" height="1210" fill="#fff"/>
-<rect x="40" y="30" width="736" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>
-<text x="408.0" y="55" font-size="19" font-weight="bold" font-style="normal" text-anchor="middle">旅前階段（Pre-trip）</text>
-<text x="408.0" y="79" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">旅遊誘因</text>
-<rect x="900" y="30" width="404" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>
-<text x="1102.0" y="55" font-size="19" font-weight="bold" font-style="normal" text-anchor="middle">旅中階段（During-trip）</text>
-<text x="1102.0" y="79" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">旅遊體驗</text>
-<rect x="1400" y="30" width="370" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>
-<text x="1585.0" y="55" font-size="19" font-weight="bold" font-style="normal" text-anchor="middle">旅後階段（Post-trip）</text>
-<text x="1585.0" y="79" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">記憶延伸與持續消費</text>
-<text x="40" y="119" font-size="16" font-weight="normal" font-style="italic" text-anchor="start">旅遊歷程（Tourist Journey）</text>
-<path d="M260,114 L1770,114" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#ah)"/>
-<rect x="40" y="170" width="260" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="170.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">數位接觸管道</text>
-<text x="170.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Digital Touchpoints</text>
-<text x="170.0" y="264" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔前置變數〕</text>
-<rect x="58" y="338.5" width="224" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="170.0" y="380.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">網路資訊</text>
-<text x="170.0" y="406.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Online Information</text>
-<rect x="58" y="499.0" width="224" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="170.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">社群媒體</text>
-<text x="170.0" y="567.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Social Media</text>
-<rect x="58" y="659.5" width="224" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="170.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">電商平台</text>
-<text x="170.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">E-commerce Platforms</text>
-<rect x="456" y="170" width="320" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="616.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">食品紀念品刺激</text>
-<text x="616.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Stimulus (S)</text>
-<text x="616.0" y="264" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔自變數〕</text>
-<rect x="486" y="306.4" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="616.0" y="348.4" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">吸引力</text>
-<text x="616.0" y="374.4" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Attractiveness</text>
-<rect x="486" y="434.8" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="616.0" y="476.8" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方特色</text>
-<text x="616.0" y="502.8" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Local Uniqueness</text>
-<rect x="486" y="563.2" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="616.0" y="605.2" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">文化故事</text>
-<text x="616.0" y="631.2" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Cultural Story</text>
-<rect x="486" y="691.6" width="260" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="616.0" y="733.6" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">品牌形象</text>
-<text x="616.0" y="759.6" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Brand Image</text>
-<rect x="932" y="170" width="340" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="1102.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">旅客心理歷程</text>
-<text x="1102.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Organism (O)</text>
-<text x="1102.0" y="264" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔中介變數〕</text>
-<rect x="962" y="338.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1102.0" y="380.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">真實性感知</text>
-<text x="1102.0" y="406.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Perceived Authenticity</text>
-<rect x="962" y="499.0" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1102.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方興趣</text>
-<text x="1102.0" y="567.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Place Interest</text>
-<rect x="962" y="659.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1102.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方依附</text>
-<text x="1102.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Place Attachment</text>
-<path d="M1102.0,430.5 L1102.0,497.0" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="1116.0" y="471.75" font-size="20" font-weight="bold" font-style="italic" text-anchor="start">H3</text>
-<path d="M1102.0,591.0 L1102.0,657.5" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="1116.0" y="632.25" font-size="20" font-weight="bold" font-style="italic" text-anchor="start">H4</text>
-<rect x="1430" y="170" width="340" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="1600.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">後續行為意圖</text>
-<text x="1600.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Behavioral Intention (R)</text>
-<text x="1600.0" y="264" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">〔依變數〕</text>
-<rect x="1460" y="338.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1600.0" y="380.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">推薦意圖</text>
-<text x="1600.0" y="406.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Recommendation Intention</text>
-<rect x="1460" y="499.0" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1600.0" y="541.0" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">回購意圖</text>
-<text x="1600.0" y="567.0" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Online &amp; Repeat Purchase</text>
-<rect x="1460" y="659.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
-<text x="1600.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再訪意圖</text>
-<text x="1600.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Revisit Intention</text>
-<path d="M300,500.0 L454,500.0" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="378.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H1</text>
-<path d="M776,384.5 L960,384.5" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="869.0" y="370.5" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H2</text>
-<path d="M1242,384.5 L1428,464.75" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="1336.0" y="410.625" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H6</text>
-<path d="M1242,705.5 L1428,625.25" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
-<text x="1336.0" y="651.375" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H5</text>
-<path d="M616.0,170 L616.0,140 L1600.0,140 L1600.0,168" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4" marker-end="url(#ah)"/>
-<rect x="883.0" y="126" width="460" height="28" fill="#fff" stroke="none"/>
-<text x="1113.0" y="147" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">直接效果（中介檢驗用，不列假設）</text>
-<path d="M938,840 Q938,852.0 950,852.0 L1090.0,852.0 Q1102.0,852.0 1102.0,864 Q1102.0,852.0 1114.0,852.0 L1254,852.0 Q1266,852.0 1266,840" fill="none" stroke="#000" stroke-width="1.6"/>
-<text x="1102.0" y="892" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">H7a、H7b：中介效果</text>
-<path d="M1600.0,830 L1600.0,960 L616.0,960 L616.0,832" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>
-<text x="1113.0" y="946" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買</text>
-<path d="M40,1010 L90,1010" fill="none" stroke="#000" stroke-width="2"/>
-<text x="100" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">研究假設路徑</text>
-<path d="M240,1010 L290,1010" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>
-<text x="300" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接效果（不列假設）</text>
-<path d="M480,1010 L530,1010" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
-<text x="540" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">循環關係（概念說明）</text>
-<text x="40" y="1052" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）</text>
-<text x="40" y="1080" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）</text>
-<text x="900.0" y="1146" font-size="26" font-weight="bold" font-style="normal" text-anchor="middle">圖 3-1　研究架構圖</text>
-<text x="900.0" y="1182" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">資料來源：本研究整理（理論基礎：SOR 理論、旅遊歷程理論、體驗經濟、食品旅遊、真實性理論、地方依附理論）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="16.0cm" height="7.3cm" viewBox="0 0 1600 730" font-family="'Times New Roman','Liberation Serif','DFKai-SB','標楷體','BiauKai','TW-Kai',serif">
+<defs><marker id="ah" markerWidth="10" markerHeight="8" refX="9.5" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#000"/></marker></defs>
+<rect width="1600" height="730" fill="#fff"/>
+<text x="370.0" y="34" font-size="34" font-weight="normal" font-style="normal" text-anchor="middle">旅前階段</text>
+<path d="M10,62 L10,50 L730,50 L730,62" fill="none" stroke="#000" stroke-width="2"/>
+<text x="1000.0" y="34" font-size="34" font-weight="normal" font-style="normal" text-anchor="middle">旅中階段</text>
+<path d="M840,62 L840,50 L1160,50 L1160,62" fill="none" stroke="#000" stroke-width="2"/>
+<text x="1430.0" y="34" font-size="34" font-weight="normal" font-style="normal" text-anchor="middle">旅後階段</text>
+<path d="M1270,62 L1270,50 L1590,50 L1590,62" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="10" y="80" width="290" height="540" fill="#fff" stroke="#000" stroke-width="3.5"/>
+<text x="155.0" y="126" font-size="38" font-weight="bold" font-style="normal" text-anchor="middle">數位接觸管道</text>
+<text x="155.0" y="168" font-size="32" font-weight="normal" font-style="normal" text-anchor="middle">前置變數</text>
+<rect x="32" y="239.5" width="246" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="155.0" y="288.1" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">網路資訊</text>
+<rect x="32" y="359.0" width="246" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="155.0" y="407.6" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">社群媒體</text>
+<rect x="32" y="478.5" width="246" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="155.0" y="527.1" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">電商平台</text>
+<rect x="410" y="80" width="320" height="540" fill="#fff" stroke="#000" stroke-width="3.5"/>
+<text x="570.0" y="126" font-size="38" font-weight="bold" font-style="normal" text-anchor="middle">食品紀念品刺激</text>
+<text x="570.0" y="168" font-size="32" font-weight="normal" font-style="normal" text-anchor="middle">刺激（S）</text>
+<rect x="432" y="215.6" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="570.0" y="264.2" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">吸引力</text>
+<rect x="432" y="311.2" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="570.0" y="359.8" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">地方特色</text>
+<rect x="432" y="406.8" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="570.0" y="455.40000000000003" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">文化故事</text>
+<rect x="432" y="502.4" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="570.0" y="551.0" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">品牌形象</text>
+<rect x="840" y="80" width="320" height="540" fill="#fff" stroke="#000" stroke-width="3.5" stroke-dasharray="14,9"/>
+<text x="1000.0" y="126" font-size="38" font-weight="bold" font-style="normal" text-anchor="middle">旅客心理歷程</text>
+<text x="1000.0" y="168" font-size="32" font-weight="normal" font-style="normal" text-anchor="middle">有機體（O）</text>
+<rect x="862" y="239.5" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="1000.0" y="288.1" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">真實性感知</text>
+<rect x="862" y="359.0" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="1000.0" y="407.6" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">地方興趣</text>
+<rect x="862" y="478.5" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="1000.0" y="527.1" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">地方依附</text>
+<rect x="1270" y="80" width="320" height="540" fill="#fff" stroke="#000" stroke-width="3.5"/>
+<text x="1430.0" y="126" font-size="38" font-weight="bold" font-style="normal" text-anchor="middle">後續行為意圖</text>
+<text x="1430.0" y="168" font-size="32" font-weight="normal" font-style="normal" text-anchor="middle">反應（R）</text>
+<rect x="1292" y="239.5" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="1430.0" y="288.1" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">推薦意圖</text>
+<rect x="1292" y="359.0" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="1430.0" y="407.6" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">回購意圖</text>
+<rect x="1292" y="478.5" width="276" height="72" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<text x="1430.0" y="527.1" font-size="35" font-weight="normal" font-style="normal" text-anchor="middle">再訪意圖</text>
+<path d="M300,406.0 L410,406.0" fill="none" stroke="#000" stroke-width="3" marker-end="url(#ah)"/>
+<text x="355.0" y="390.0" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle">H1</text>
+<path d="M730,275.5 L862,275.5" fill="none" stroke="#000" stroke-width="3" marker-end="url(#ah)"/>
+<text x="796.0" y="259.5" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle">H2</text>
+<path d="M1000.0,311.5 L1000.0,359.0" fill="none" stroke="#000" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1014.0" y="347.25" font-size="34" font-weight="bold" font-style="italic" text-anchor="start">H3</text>
+<path d="M1000.0,431.0 L1000.0,478.5" fill="none" stroke="#000" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1014.0" y="466.75" font-size="34" font-weight="bold" font-style="italic" text-anchor="start">H4</text>
+<path d="M1138,275.5 L1270,335.25" fill="none" stroke="#000" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1214.0" y="285.375" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle">H6</text>
+<path d="M1138,514.5 L1270,454.75" fill="none" stroke="#000" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1214.0" y="530.625" font-size="34" font-weight="bold" font-style="italic" text-anchor="middle">H5</text>
+<path d="M848,632 Q848,645.0 862,645.0 L986.0,645.0 Q1000.0,645.0 1000.0,658 Q1000.0,645.0 1014.0,645.0 L1138,645.0 Q1152,645.0 1152,632" fill="none" stroke="#000" stroke-width="2.5"/>
+<text x="1000.0" y="696" font-size="32" font-weight="normal" font-style="normal" text-anchor="middle">H7a、H7b（中介效果）</text>
 </svg>

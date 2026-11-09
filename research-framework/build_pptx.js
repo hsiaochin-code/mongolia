@@ -3,20 +3,18 @@ const pptxgen = require('pptxgenjs');
 const JSZip = require('jszip');
 const fs = require('fs'), path = require('path');
 
-const { W, H, prims } = JSON.parse(fs.readFileSync(path.join(__dirname, 'framework_prims.json'), 'utf8'));
-const SLIDE_W = 13.333;
-const k = SLIDE_W / W;              // 像素 → 英吋
+const { W, H, CM, prims } = JSON.parse(fs.readFileSync(path.join(__dirname, 'framework_prims.json'), 'utf8'));
+const k = CM / 2.54;                // 像素 → 英吋（1 px = 0.01 cm）
 const pt = px => +(px * k * 72).toFixed(1);   // 像素 → 點
 const LATIN = 'Times New Roman', EA = '標楷體';
 
 const pres = new pptxgen();
-pres.defineLayout({ name: 'FIG', width: SLIDE_W, height: +(H * k).toFixed(3) });
+pres.defineLayout({ name: 'FIG', width: +(W * k).toFixed(3), height: +(H * k).toFixed(3) });
 pres.layout = 'FIG';
 pres.title = '研究架構圖';
 const slide = pres.addSlide();
 slide.background = { color: 'FFFFFF' };
 
-const hex = c => (c === '#eee' ? 'EEEEEE' : 'FFFFFF');
 // 粗估字串寬度（中日文全形約 1 字高，半形約 0.55 字高）
 const textW = (s, size) => [...s].reduce((w, ch) => w + (ch.charCodeAt(0) > 0x2e80 ? size : size * 0.55), 0);
 
@@ -24,8 +22,8 @@ for (const p of prims) {
   if (p.t === 'rect') {
     const opts = {
       shape: pres.shapes.RECTANGLE, x: p.x * k, y: p.y * k, w: p.w * k, h: p.h * k,
-      fill: { color: hex(p.fill) },
-      line: p.sw ? { color: '000000', width: Math.max(pt(p.sw), 0.75) } : { type: 'none' },
+      fill: { color: 'FFFFFF' },
+      line: { color: '000000', width: pt(p.sw), ...(p.dash ? { dashType: 'dash' } : {}) },
       align: 'center', valign: 'middle', margin: 0, fontFace: LATIN, color: '000000',
     };
     if (p.lines.length) {
@@ -48,9 +46,7 @@ for (const p of prims) {
   } else if (p.t === 'path') {
     const segs = p.pts.slice(1).map((q, i) => [p.pts[i], q]);
     segs.forEach(([[x1, y1], [x2, y2]], i) => {
-      const line = { color: '000000', width: Math.max(pt(p.sw), 0.75) };
-      if (p.dash === 'dot') line.dashType = 'sysDot';
-      if (p.dash === 'dash') line.dashType = 'dash';
+      const line = { color: '000000', width: pt(p.sw) };
       if (p.head && i === segs.length - 1) line.endArrowType = 'triangle';
       slide.addShape(pres.shapes.LINE, {
         x: Math.min(x1, x2) * k, y: Math.min(y1, y2) * k,
@@ -63,7 +59,7 @@ for (const p of prims) {
     const cx = p.x + p.w / 2, cy = p.y + p.h / 2;
     slide.addShape(pres.shapes.RIGHT_BRACE, {
       x: (cx - p.h / 2) * k, y: (cy - p.w / 2) * k, w: p.h * k, h: p.w * k, rotate: 90,
-      line: { color: '000000', width: Math.max(pt(p.sw), 0.75) },
+      line: { color: '000000', width: pt(p.sw) },
     });
   }
 }
