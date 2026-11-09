@@ -1,0 +1,9 @@
+{
+  "name": "research-framework",
+  "private": true,
+  "description": "研究架構圖產生工具（PPTX 匯出用）",
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "pptxgenjs": "^3.12.0"
+  }
+}

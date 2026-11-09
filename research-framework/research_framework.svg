@@ -11,7 +11,7 @@
 <text x="1585.0" y="55" font-size="19" font-weight="bold" font-style="normal" text-anchor="middle">旅後階段（Post-trip）</text>
 <text x="1585.0" y="79" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle">記憶延伸與持續消費</text>
 <text x="40" y="119" font-size="16" font-weight="normal" font-style="italic" text-anchor="start">旅遊歷程（Tourist Journey）</text>
-<line x1="260" y1="114" x2="1770" y2="114" stroke="#000" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M260,114 L1770,114" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#ah)"/>
 <rect x="40" y="170" width="260" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
 <text x="170.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">數位接觸管道</text>
 <text x="170.0" y="236" font-size="18" font-weight="normal" font-style="italic" text-anchor="middle">Digital Touchpoints</text>
@@ -54,9 +54,9 @@
 <rect x="962" y="659.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
 <text x="1102.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">地方依附</text>
 <text x="1102.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Place Attachment</text>
-<line x1="1102.0" y1="430.5" x2="1102.0" y2="497.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1102.0,430.5 L1102.0,497.0" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="1116.0" y="471.75" font-size="20" font-weight="bold" font-style="italic" text-anchor="start">H3</text>
-<line x1="1102.0" y1="591.0" x2="1102.0" y2="657.5" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1102.0,591.0 L1102.0,657.5" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="1116.0" y="632.25" font-size="20" font-weight="bold" font-style="italic" text-anchor="start">H4</text>
 <rect x="1430" y="170" width="340" height="660" fill="#fff" stroke="#000" stroke-width="2"/>
 <text x="1600.0" y="208" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle">後續行為意圖</text>
@@ -71,26 +71,26 @@
 <rect x="1460" y="659.5" width="280" height="92" fill="#fff" stroke="#000" stroke-width="1.6"/>
 <text x="1600.0" y="701.5" font-size="21" font-weight="normal" font-style="normal" text-anchor="middle">再訪意圖</text>
 <text x="1600.0" y="727.5" font-size="16" font-weight="normal" font-style="italic" text-anchor="middle">Revisit Intention</text>
-<line x1="300" y1="500.0" x2="454" y2="500.0" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M300,500.0 L454,500.0" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="378.0" y="486.0" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H1</text>
-<line x1="776" y1="384.5" x2="960" y2="384.5" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M776,384.5 L960,384.5" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="869.0" y="370.5" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H2</text>
-<line x1="1242" y1="384.5" x2="1428" y2="464.75" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1242,384.5 L1428,464.75" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="1336.0" y="410.625" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H6</text>
-<line x1="1242" y1="705.5" x2="1428" y2="625.25" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1242,705.5 L1428,625.25" fill="none" stroke="#000" stroke-width="2" marker-end="url(#ah)"/>
 <text x="1336.0" y="651.375" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">H5</text>
 <path d="M616.0,170 L616.0,140 L1600.0,140 L1600.0,168" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4" marker-end="url(#ah)"/>
-<rect x="883.0" y="126" width="460" height="28" fill="#fff"/>
+<rect x="883.0" y="126" width="460" height="28" fill="#fff" stroke="none"/>
 <text x="1113.0" y="147" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">直接效果（中介檢驗用，不列假設）</text>
 <path d="M938,840 Q938,852.0 950,852.0 L1090.0,852.0 Q1102.0,852.0 1102.0,864 Q1102.0,852.0 1114.0,852.0 L1254,852.0 Q1266,852.0 1266,840" fill="none" stroke="#000" stroke-width="1.6"/>
 <text x="1102.0" y="892" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle">H7a、H7b：中介效果</text>
 <path d="M1600.0,830 L1600.0,960 L616.0,960 L616.0,832" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>
 <text x="1113.0" y="946" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle">回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買</text>
-<line x1="40" y1="1010" x2="90" y2="1010" stroke="#000" stroke-width="2"/>
+<path d="M40,1010 L90,1010" fill="none" stroke="#000" stroke-width="2"/>
 <text x="100" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">研究假設路徑</text>
-<line x1="240" y1="1010" x2="290" y2="1010" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>
+<path d="M240,1010 L290,1010" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>
 <text x="300" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">直接效果（不列假設）</text>
-<line x1="480" y1="1010" x2="530" y2="1010" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
+<path d="M480,1010 L530,1010" fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>
 <text x="540" y="1016" font-size="16" font-weight="normal" font-style="normal" text-anchor="start">循環關係（概念說明）</text>
 <text x="40" y="1052" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">註：H7a 中介路徑：食品紀念品刺激 → 真實性感知 → 後續行為意圖（H2 × H6）</text>
 <text x="40" y="1080" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">　　H7b 序列中介路徑：食品紀念品刺激 → 真實性感知 → 地方興趣 → 地方依附 → 後續行為意圖（H2 × H3 × H4 × H5）</text>

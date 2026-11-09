@@ -1,5 +1,6 @@
-"""產生論文格式研究架構圖（SVG），並以 Playwright 輸出 PNG / PDF。"""
+"""產生論文格式研究架構圖（SVG），並以 Playwright 輸出 PNG / PDF，另輸出可編輯的 PPTX。"""
 import pathlib
+import json
 import subprocess
 
 W, H = 1800, 1210
@@ -7,26 +8,40 @@ W, H = 1800, 1210
 FONT = "'Times New Roman','Liberation Serif','DFKai-SB','標楷體','BiauKai','TW-Kai',serif"
 out = []
 a = out.append
+prims = []  # 給 build_pptx.js 使用的可編輯圖元（座標單位同 SVG 像素）
+P = prims.append
 
-def text(x, y, s, size=20, weight="normal", anchor="middle", style="normal"):
+def text(x, y, s, size=20, weight="normal", anchor="middle", style="normal", record=True):
     a(f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" '
       f'font-style="{style}" text-anchor="{anchor}">{s}</text>')
+    if record:
+        P(dict(t="text", x=x, y=y, s=s.replace("&amp;", "&"), size=size,
+               bold=weight == "bold", italic=style == "italic", anchor=anchor))
 
-def box(x, y, w, h, dash=False, sw=1.6):
+def box(x, y, w, h, dash=False, sw=1.6, fill="#fff", stroke=True, lines=None):
     d = ' stroke-dasharray="8,5"' if dash else ""
-    a(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#fff" stroke="#000" stroke-width="{sw}"{d}/>')
+    st = f'stroke="#000" stroke-width="{sw}"' if stroke else 'stroke="none"'
+    a(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{fill}" {st}{d}/>')
+    P(dict(t="rect", x=x, y=y, w=w, h=h, sw=sw if stroke else 0, fill=fill, lines=lines or []))
 
 def item(x, y, w, h, zh, en):
-    box(x, y, w, h)
-    text(x + w / 2, y + h / 2 - 4, zh, 21)
-    text(x + w / 2, y + h / 2 + 22, en, 16, style="italic")
+    box(x, y, w, h, lines=[dict(s=zh, size=21), dict(s=en.replace("&amp;", "&"), size=16, italic=True)])
+    text(x + w / 2, y + h / 2 - 4, zh, 21, record=False)
+    text(x + w / 2, y + h / 2 + 22, en, 16, style="italic", record=False)
 
-def arrow(x1, y1, x2, y2, dash=False, sw=2):
-    d = ' stroke-dasharray="9,6"' if dash else ""
-    a(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#000" stroke-width="{sw}"{d} marker-end="url(#ah)"/>')
+def path(pts, sw=2, dash=None, head=True):
+    """折線；dash: None / "dot" / "dash"；head: 最後一段加箭頭"""
+    da = {"dot": ' stroke-dasharray="3,4"', "dash": ' stroke-dasharray="9,6"'}.get(dash, "")
+    mk = ' marker-end="url(#ah)"' if head else ""
+    d = " ".join(("M" if i == 0 else "L") + f"{x},{y}" for i, (x, y) in enumerate(pts))
+    a(f'<path d="{d}" fill="none" stroke="#000" stroke-width="{sw}"{da}{mk}/>')
+    P(dict(t="path", pts=pts, sw=sw, dash=dash, head=head))
 
-def hyp(x, y, s):
-    text(x, y, s, 20, "bold", style="italic")
+def arrow(x1, y1, x2, y2, sw=2, dash=None):
+    path([(x1, y1), (x2, y2)], sw, dash)
+
+def hyp(x, y, s, anchor="middle", italic=True):
+    text(x, y, s, 20, "bold", anchor=anchor, style="italic" if italic else "normal")
 
 a(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">')
 a('<defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">'
@@ -39,9 +54,10 @@ stages = [(40, 776, "旅前階段（Pre-trip）", "旅遊誘因"),
           (900, 1304, "旅中階段（During-trip）", "旅遊體驗"),
           (1400, 1770, "旅後階段（Post-trip）", "記憶延伸與持續消費")]
 for x1, x2, s, sub in stages:
-    a(f'<rect x="{x1}" y="{TOP}" width="{x2-x1}" height="58" fill="#eee" stroke="#000" stroke-width="1.2"/>')
-    text((x1 + x2) / 2, TOP + 25, s, 19, "bold")
-    text((x1 + x2) / 2, TOP + 49, sub, 17)
+    box(x1, TOP, x2 - x1, 58, sw=1.2, fill="#eee",
+        lines=[dict(s=s, size=19, bold=True), dict(s=sub, size=17)])
+    text((x1 + x2) / 2, TOP + 25, s, 19, "bold", record=False)
+    text((x1 + x2) / 2, TOP + 49, sub, 17, record=False)
 text(40, TOP + 89, "旅遊歷程（Tourist Journey）", 16, anchor="start", style="italic")
 arrow(260, TOP + 84, 1770, TOP + 84, sw=1.5)
 
@@ -82,8 +98,7 @@ pa_c = sum(op[0]) / 2                      # 真實性感知中心 y
 patt_c = sum(op[2]) / 2                    # 地方依附中心 y
 for (t, b), (t2, _), h in zip(op, op[1:], ["H3", "H4"]):
     arrow(ox + ow / 2, b, ox + ow / 2, t2 - 2)
-    hyp(ox + ow / 2 + 14, (b + t2) / 2 + 7, h)
-    out[-1] = out[-1].replace('text-anchor="middle"', 'text-anchor="start"')
+    hyp(ox + ow / 2 + 14, (b + t2) / 2 + 7, h, anchor="start")
 # R：後續行為意圖（單一構面，三個衡量面向）
 rx, rw = 1430, 340
 rp = construct(rx, rw, "後續行為意圖", "Behavioral Intention (R)",
@@ -100,9 +115,8 @@ arrow(ix2, pa_c, rx - 2, r_up); hyp((ix2 + rx) / 2, (pa_c + r_up) / 2 - 14, "H6"
 arrow(ix2, patt_c, rx - 2, r_dn); hyp((ix2 + rx) / 2, (patt_c + r_dn) / 2 - 14, "H5")
 
 # 直接效果（S → R，中介檢驗用，不列假設）
-a(f'<path d="M{sx + sw_ / 2},{Y0} L{sx + sw_ / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 30} L{rx + rw / 2},{Y0 - 2}" '
-  'fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4" marker-end="url(#ah)"/>')
-a(f'<rect x="{(sx+rx+rw)/2 - 230}" y="{Y0 - 44}" width="460" height="28" fill="#fff"/>')
+path([(sx + sw_ / 2, Y0), (sx + sw_ / 2, Y0 - 30), (rx + rw / 2, Y0 - 30), (rx + rw / 2, Y0 - 2)], 1.2, "dot")
+box((sx + rx + rw) / 2 - 230, Y0 - 44, 460, 28, stroke=False)
 text((sx + rx + rw) / 2, Y0 - 23, "直接效果（中介檢驗用，不列假設）", 18)
 
 # H7：中介效果以大括號標示於 O 構面下方（不另畫路徑）
@@ -111,23 +125,22 @@ xm, x1, x2 = ox + ow / 2, ox + 6, ox + ow - 6
 a(f'<path d="M{x1},{by} Q{x1},{by + bh / 2} {x1 + br},{by + bh / 2} L{xm - br},{by + bh / 2} '
   f'Q{xm},{by + bh / 2} {xm},{by + bh} Q{xm},{by + bh / 2} {xm + br},{by + bh / 2} '
   f'L{x2 - br},{by + bh / 2} Q{x2},{by + bh / 2} {x2},{by}" fill="none" stroke="#000" stroke-width="1.6"/>')
-hyp(xm, by + bh + 28, "H7a、H7b：中介效果")
-out[-1] = out[-1].replace('font-style="italic"', 'font-style="normal"')
+P(dict(t="brace", x=x1, y=by, w=x2 - x1, h=bh, sw=1.6))
+hyp(xm, by + bh + 28, "H7a、H7b：中介效果", italic=False)
 
 # 回饋（循環）路徑：概念說明，不列入檢驗
 FB = 960
-a(f'<path d="M{rx + rw / 2},{Y1} L{rx + rw / 2},{FB} L{sx + sw_ / 2},{FB} L{sx + sw_ / 2},{Y1 + 2}" '
-  'fill="none" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6" marker-end="url(#ah)"/>')
+path([(rx + rw / 2, Y1), (rx + rw / 2, FB), (sx + sw_ / 2, FB), (sx + sw_ / 2, Y1 + 2)], 1.6, "dash")
 text((sx + rx + rw) / 2, FB - 14,
      "回饋效果（概念說明，不列入檢驗）：到訪金門、體驗地方文化、現地購買", 18)
 
 # 圖例
 lx, ly = 40, 1010
-a(f'<line x1="{lx}" y1="{ly}" x2="{lx+50}" y2="{ly}" stroke="#000" stroke-width="2"/>')
+path([(lx, ly), (lx + 50, ly)], 2, head=False)
 text(lx + 60, ly + 6, "研究假設路徑", 16, anchor="start")
-a(f'<line x1="{lx+200}" y1="{ly}" x2="{lx+250}" y2="{ly}" stroke="#000" stroke-width="1.2" stroke-dasharray="3,4"/>')
+path([(lx + 200, ly), (lx + 250, ly)], 1.2, "dot", head=False)
 text(lx + 260, ly + 6, "直接效果（不列假設）", 16, anchor="start")
-a(f'<line x1="{lx+440}" y1="{ly}" x2="{lx+490}" y2="{ly}" stroke="#000" stroke-width="1.6" stroke-dasharray="9,6"/>')
+path([(lx + 440, ly), (lx + 490, ly)], 1.6, "dash", head=False)
 text(lx + 500, ly + 6, "循環關係（概念說明）", 16, anchor="start")
 
 # 中介假設註記
@@ -142,5 +155,9 @@ a("</svg>")
 here = pathlib.Path(__file__).parent
 svg = here / "research_framework.svg"
 svg.write_text("\n".join(out), encoding="utf-8")
+(here / "framework_prims.json").write_text(json.dumps(dict(W=W, H=H, prims=prims), ensure_ascii=False), encoding="utf-8")
 subprocess.run(["node", str(here / "render.js")], check=True)
+# 可編輯的 PowerPoint 版（需要 pptxgenjs、jszip：在此資料夾執行 npm install）
+if subprocess.run(["node", str(here / "build_pptx.js")]).returncode:
+    print("PPTX 未產生：請先在 research-framework 資料夾執行 npm install")
 print("done")
