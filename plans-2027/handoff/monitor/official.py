@@ -97,7 +97,7 @@ def nj_check(slug):
     for y, m in MONTHS:
         url = f'https://www.nj-yoyaku.net/{slug}/plan.aspx?TDT={y}{m:02d}01&NZ=2'
         t = to_text(curl(url))
-        mm = re.search(r'(\d{4})年(\d{2})月\n前月.*?土\n(.*?)\n\s*一室当り', t, re.S)
+        mm = re.search(r'(\d{4})年(\d{2})月\n前月.*?土\n(.*?)\n\s*(?:一室当り|\d{4}年\d{2}月\d{2}日)', t, re.S)
         if not mm or (int(mm.group(1)), int(mm.group(2))) != (y, m):
             raise RuntimeError('讀不到月曆')
         toks = [x.strip() for x in mm.group(3).split('\n')]
